@@ -1,0 +1,33 @@
+[27-Oct-2020 23:09:35 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 6
+[27-Oct-2020 23:09:41 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 6
+[27-Oct-2020 23:09:51 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 6
+[27-Oct-2020 23:10:25 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 6
+[27-Oct-2020 23:10:29 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 6
+[27-Oct-2020 23:10:37 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 6
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: hos_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 16
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: address_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 21
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: district_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 53
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: dr_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 58
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: username_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 63
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: email_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 68
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: mobile_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 73
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: password_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 82
+[02-Nov-2020 08:42:52 America/New_York] PHP Notice:  Undefined variable: confirm_password_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 87
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: hos_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 16
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: address_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 21
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: district_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 53
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: dr_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 58
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: username_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 63
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: email_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 68
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: mobile_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 73
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: password_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 82
+[02-Nov-2020 08:43:07 America/New_York] PHP Notice:  Undefined variable: confirm_password_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 87
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: hos_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 16
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: address_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 21
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: district_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 53
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: dr_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 58
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: username_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 63
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: email_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 68
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: mobile_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 73
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: password_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 82
+[02-Nov-2020 08:43:58 America/New_York] PHP Notice:  Undefined variable: confirm_password_err in /home/himajimn/public_html/bloodbank/hospital/registration.php on line 87
