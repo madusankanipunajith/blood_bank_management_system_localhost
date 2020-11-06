@@ -7,6 +7,11 @@
 	session_start();
     require_once "header.php";
     $nic_err = $password_err = "";
+
+    if (!isset($_SESSION['super'])) {
+        header("Location: ../reg_login");
+    }
+
     if ($_SERVER["REQUEST_METHOD"] == "GET") {
         if (isset($_GET['nic'])) {
             $nic_err= $_GET['nic'];

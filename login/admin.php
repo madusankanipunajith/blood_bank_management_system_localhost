@@ -48,4 +48,8 @@
 		</div>
 	</center>
 
+	<div style="float: right; width: 200px; margin-right: 50px;">
+		<b><a href="application/super_authentication"><i class="fa fa-key" aria-hidden="true"></i>  Super Admin Login</a></b>
+	</div>
+
 <?php include '../footer.php'; ?>
