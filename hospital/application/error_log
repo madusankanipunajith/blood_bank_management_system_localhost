@@ -1,0 +1,23 @@
+[02-Nov-2020 08:44:21 America/New_York] PHP Warning:  require_once(../config.php): failed to open stream: No such file or directory in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 08:44:21 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 08:51:14 America/New_York] PHP Warning:  require_once(../config.php): failed to open stream: No such file or directory in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 08:51:14 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 08:59:41 America/New_York] PHP Warning:  require_once(../config.php): failed to open stream: No such file or directory in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 08:59:41 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 09:26:35 America/New_York] PHP Warning:  require_once(../config.php): failed to open stream: No such file or directory in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 09:26:35 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 09:28:11 America/New_York] PHP Warning:  require_once(../config.php): failed to open stream: No such file or directory in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 09:28:11 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 09:57:39 America/New_York] PHP Warning:  require_once(../config.php): failed to open stream: No such file or directory in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 09:57:39 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 09:57:45 America/New_York] PHP Warning:  require_once(../config.php): failed to open stream: No such file or directory in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 09:57:45 America/New_York] PHP Fatal error:  require_once(): Failed opening required '../config.php' (include_path='.:/opt/alt/php72/usr/share/pear') in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 3
+[02-Nov-2020 10:09:50 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
+[02-Nov-2020 10:11:25 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
+[02-Nov-2020 10:12:45 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
+[02-Nov-2020 10:12:55 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
+[02-Nov-2020 10:16:14 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
+[02-Nov-2020 10:24:50 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
+[02-Nov-2020 10:32:37 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
+[02-Nov-2020 10:34:15 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
+[02-Nov-2020 10:39:37 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/application/signup.php on line 119
