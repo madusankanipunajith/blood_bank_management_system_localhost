@@ -1,0 +1,1 @@
+[06-Nov-2020 20:59:38 America/New_York] PHP Notice:  session_start(): A session had already been started - ignoring in /home/himajimn/public_html/bloodbank/reset/enter_email.php on line 5
