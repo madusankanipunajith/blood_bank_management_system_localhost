@@ -110,9 +110,28 @@ if (isset($_POST['new_password'])) {
 
     if ($email) {
       $new_pass = password_hash($new_pass, PASSWORD_DEFAULT);
-      $sql = "UPDATE donor SET password='$new_pass' WHERE email='$email'";
-      $results = mysqli_query($link, $sql);
-      header('location: ../reg_login.php?password=ok');
+      
+      if ($type=="donor") {
+        $sql = "UPDATE donor SET password='$new_pass' WHERE email='$email'";
+        $results = mysqli_query($link, $sql);
+      }elseif ($type=="requester") {
+        $sql = "UPDATE requestor SET Password='$new_pass' WHERE Email='$email'";
+        $results = mysqli_query($link, $sql);
+      }elseif ($type=="admin") {
+        $sql = "UPDATE bank_admin SET Password='$new_pass' WHERE Email='$email'";
+        $results = mysqli_query($link, $sql);
+      }elseif ($type=="organization") {
+        $sql = "UPDATE organization SET Password='$new_pass' WHERE Email='$email'";
+        $results = mysqli_query($link, $sql);
+      }elseif ($type=="hospital") {
+        $sql = "UPDATE normal_hospital SET Password='$new_pass' WHERE Email='$email'";
+        $results = mysqli_query($link, $sql);
+      }else {
+        $sql = "UPDATE super_admin SET Password='$new_pass' WHERE Email='$email'";
+        $results = mysqli_query($link, $sql);
+      }
+      
+        header('location: ../reg_login.php?password=ok');
     }else{
       array_push($errors, "Sorry, token was expired. use the latest link");
       header("location: ../reg_login?token_expired=ok");
