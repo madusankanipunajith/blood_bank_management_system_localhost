@@ -1,0 +1,559 @@
+[14-Oct-2020 06:36:35 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:44:55 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:45:20 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:51:06 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:51:20 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:51:23 America/New_York] PHP Notice:  Undefined variable: nic in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 115
+[14-Oct-2020 06:51:23 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 162
+[14-Oct-2020 06:51:23 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 166
+[14-Oct-2020 06:51:23 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 170
+[14-Oct-2020 06:51:23 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 177
+[14-Oct-2020 06:51:23 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 182
+[14-Oct-2020 06:51:23 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 190
+[14-Oct-2020 06:51:23 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 194
+[14-Oct-2020 06:52:20 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:52:22 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:52:24 America/New_York] PHP Notice:  Undefined variable: nic in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 115
+[14-Oct-2020 06:52:24 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 162
+[14-Oct-2020 06:52:24 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 166
+[14-Oct-2020 06:52:24 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 170
+[14-Oct-2020 06:52:24 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 177
+[14-Oct-2020 06:52:24 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 182
+[14-Oct-2020 06:52:24 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 190
+[14-Oct-2020 06:52:24 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 194
+[14-Oct-2020 06:54:10 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 162
+[14-Oct-2020 06:54:10 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 166
+[14-Oct-2020 06:54:10 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 170
+[14-Oct-2020 06:54:10 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 177
+[14-Oct-2020 06:54:10 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 182
+[14-Oct-2020 06:54:10 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 190
+[14-Oct-2020 06:54:10 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 194
+[14-Oct-2020 06:54:19 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:54:22 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 162
+[14-Oct-2020 06:54:22 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 166
+[14-Oct-2020 06:54:22 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 170
+[14-Oct-2020 06:54:22 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 177
+[14-Oct-2020 06:54:22 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 182
+[14-Oct-2020 06:54:22 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 190
+[14-Oct-2020 06:54:22 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 194
+[14-Oct-2020 06:55:22 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:55:25 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:55:37 America/New_York] PHP Notice:  Undefined index: nic in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 18
+[14-Oct-2020 06:55:37 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 163
+[14-Oct-2020 06:55:37 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 167
+[14-Oct-2020 06:55:37 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[14-Oct-2020 06:55:37 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 178
+[14-Oct-2020 06:55:37 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 183
+[14-Oct-2020 06:55:37 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[14-Oct-2020 06:55:37 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[14-Oct-2020 06:56:04 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:56:18 America/New_York] PHP Notice:  Undefined index: nic in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 18
+[14-Oct-2020 06:56:18 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 163
+[14-Oct-2020 06:56:18 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 167
+[14-Oct-2020 06:56:18 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[14-Oct-2020 06:56:18 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 178
+[14-Oct-2020 06:56:18 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 183
+[14-Oct-2020 06:56:18 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[14-Oct-2020 06:56:18 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[14-Oct-2020 06:59:02 America/New_York] PHP Notice:  Undefined index: nic in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 18
+[14-Oct-2020 06:59:02 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 163
+[14-Oct-2020 06:59:02 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 167
+[14-Oct-2020 06:59:02 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[14-Oct-2020 06:59:02 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 178
+[14-Oct-2020 06:59:02 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 183
+[14-Oct-2020 06:59:02 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[14-Oct-2020 06:59:02 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[14-Oct-2020 06:59:10 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 06:59:15 America/New_York] PHP Notice:  Undefined index: nic in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 18
+[14-Oct-2020 06:59:15 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 163
+[14-Oct-2020 06:59:15 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 167
+[14-Oct-2020 06:59:15 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[14-Oct-2020 06:59:15 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 178
+[14-Oct-2020 06:59:15 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 183
+[14-Oct-2020 06:59:15 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[14-Oct-2020 06:59:15 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[14-Oct-2020 07:01:29 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:01:35 America/New_York] PHP Notice:  Undefined index: nic in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 18
+[14-Oct-2020 07:01:35 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 163
+[14-Oct-2020 07:01:35 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 167
+[14-Oct-2020 07:01:35 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[14-Oct-2020 07:01:35 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 178
+[14-Oct-2020 07:01:35 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 183
+[14-Oct-2020 07:01:35 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[14-Oct-2020 07:01:35 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[14-Oct-2020 07:02:49 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:02:52 America/New_York] PHP Notice:  Undefined index: nic in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 18
+[14-Oct-2020 07:02:52 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 163
+[14-Oct-2020 07:02:52 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 167
+[14-Oct-2020 07:02:52 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[14-Oct-2020 07:02:52 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 178
+[14-Oct-2020 07:02:52 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 183
+[14-Oct-2020 07:02:52 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[14-Oct-2020 07:02:52 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[14-Oct-2020 07:03:46 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:03:50 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 163
+[14-Oct-2020 07:03:50 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 167
+[14-Oct-2020 07:03:50 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[14-Oct-2020 07:03:50 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 178
+[14-Oct-2020 07:03:50 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 183
+[14-Oct-2020 07:03:50 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[14-Oct-2020 07:03:50 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[14-Oct-2020 07:04:04 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:04:20 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:12:45 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:12:51 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:12:54 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:13:00 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:15:19 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:15:28 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:15:35 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:17:50 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:19:11 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:19:17 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:30:11 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 07:30:30 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[14-Oct-2020 07:30:30 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 157
+[14-Oct-2020 07:30:30 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 161
+[14-Oct-2020 07:30:30 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 168
+[14-Oct-2020 07:30:30 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 173
+[14-Oct-2020 07:30:30 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 181
+[14-Oct-2020 07:30:30 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 185
+[14-Oct-2020 07:30:50 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 08:05:20 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 08:57:49 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[14-Oct-2020 10:14:20 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[16-Oct-2020 00:28:17 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[18-Oct-2020 22:29:58 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[18-Oct-2020 22:30:04 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[18-Oct-2020 23:28:22 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[20-Oct-2020 13:12:27 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[24-Oct-2020 01:38:45 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[25-Oct-2020 01:07:41 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[25-Oct-2020 01:08:18 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[25-Oct-2020 01:08:38 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[25-Oct-2020 01:08:46 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[25-Oct-2020 01:09:10 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[26-Oct-2020 09:27:01 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[26-Oct-2020 09:27:25 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[26-Oct-2020 09:27:25 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 157
+[26-Oct-2020 09:27:25 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 161
+[26-Oct-2020 09:27:25 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 168
+[26-Oct-2020 09:27:25 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 173
+[26-Oct-2020 09:27:25 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 181
+[26-Oct-2020 09:27:25 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 185
+[26-Oct-2020 09:27:54 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[26-Oct-2020 09:27:56 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[26-Oct-2020 09:28:02 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[26-Oct-2020 09:28:02 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 157
+[26-Oct-2020 09:28:02 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 161
+[26-Oct-2020 09:28:02 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 168
+[26-Oct-2020 09:28:02 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 173
+[26-Oct-2020 09:28:02 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 181
+[26-Oct-2020 09:28:02 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 185
+[27-Oct-2020 02:49:04 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[27-Oct-2020 02:49:18 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[27-Oct-2020 02:49:29 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 52
+[27-Oct-2020 08:12:47 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:12:47 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:12:47 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 50
+[27-Oct-2020 08:12:54 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:12:54 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:12:54 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:12:54 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:12:54 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:12:54 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:12:54 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:14:25 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:14:25 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:14:25 America/New_York] PHP Notice:  Undefined index: edit in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 50
+[27-Oct-2020 08:14:29 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 123
+[27-Oct-2020 08:14:29 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 124
+[27-Oct-2020 08:14:59 America/New_York] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 38
+[27-Oct-2020 08:17:26 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 123
+[27-Oct-2020 08:17:26 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 124
+[27-Oct-2020 08:17:36 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:17:36 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:17:41 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 123
+[27-Oct-2020 08:17:41 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 124
+[27-Oct-2020 08:17:47 America/New_York] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php:38
+Stack trace:
+#0 {main}
+  thrown in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 38
+[27-Oct-2020 08:18:44 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:18:44 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:18:48 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:18:48 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:18:53 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 123
+[27-Oct-2020 08:18:53 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 124
+[27-Oct-2020 08:19:01 America/New_York] PHP Notice:  Undefined variable: data in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 82
+[27-Oct-2020 08:19:01 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:19:01 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:19:01 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:19:01 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:19:01 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:19:01 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:19:01 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:20:22 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:20:22 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:20:28 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 123
+[27-Oct-2020 08:20:28 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 124
+[27-Oct-2020 08:20:36 America/New_York] PHP Notice:  Undefined variable: data in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 82
+[27-Oct-2020 08:20:36 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:20:36 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:20:36 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:20:36 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:20:36 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:20:36 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:20:36 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:20:39 America/New_York] PHP Notice:  Undefined variable: data in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 82
+[27-Oct-2020 08:20:39 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:20:39 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:20:39 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:20:39 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:20:39 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:20:39 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:20:39 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:20:56 America/New_York] PHP Notice:  Undefined variable: data in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 82
+[27-Oct-2020 08:20:56 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:20:56 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:20:56 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:20:56 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:20:56 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:20:56 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:20:56 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:20:57 America/New_York] PHP Notice:  Undefined variable: data in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 82
+[27-Oct-2020 08:20:57 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:20:57 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:20:57 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:20:57 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:20:57 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:20:57 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:20:57 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:21:54 America/New_York] PHP Notice:  Undefined variable: data in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 82
+[27-Oct-2020 08:21:54 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:21:54 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:21:54 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:21:54 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:21:54 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:21:54 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:21:54 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:21:58 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:21:58 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:22:04 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 123
+[27-Oct-2020 08:22:04 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 124
+[27-Oct-2020 08:22:06 America/New_York] PHP Notice:  Undefined variable: data in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 82
+[27-Oct-2020 08:22:06 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:22:06 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:22:06 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:22:06 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:22:06 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:22:06 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:22:06 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:25:45 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:25:45 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:25:49 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 123
+[27-Oct-2020 08:25:49 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 124
+[27-Oct-2020 08:25:54 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:25:54 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:25:54 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:25:54 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:25:54 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:25:54 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:25:54 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:25:56 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:25:56 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:25:56 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:25:56 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:25:56 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:25:56 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:25:56 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:25:57 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 156
+[27-Oct-2020 08:25:57 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:25:57 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:25:57 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 171
+[27-Oct-2020 08:25:57 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 08:25:57 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 184
+[27-Oct-2020 08:25:57 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:34:56 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:34:56 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:35:00 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 127
+[27-Oct-2020 08:35:00 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 128
+[27-Oct-2020 08:35:08 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:35:08 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:35:08 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 168
+[27-Oct-2020 08:35:08 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 175
+[27-Oct-2020 08:35:08 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 180
+[27-Oct-2020 08:35:08 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:35:08 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 192
+[27-Oct-2020 08:35:20 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 127
+[27-Oct-2020 08:35:20 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 128
+[27-Oct-2020 08:35:22 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:35:22 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:35:54 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 127
+[27-Oct-2020 08:35:54 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 128
+[27-Oct-2020 08:36:08 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:36:08 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:36:08 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 168
+[27-Oct-2020 08:36:08 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 175
+[27-Oct-2020 08:36:08 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 180
+[27-Oct-2020 08:36:08 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:36:08 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 192
+[27-Oct-2020 08:37:25 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:37:25 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 08:37:29 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 127
+[27-Oct-2020 08:37:29 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 128
+[27-Oct-2020 08:37:34 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 160
+[27-Oct-2020 08:37:34 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 164
+[27-Oct-2020 08:37:34 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 168
+[27-Oct-2020 08:37:34 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 175
+[27-Oct-2020 08:37:34 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 180
+[27-Oct-2020 08:37:34 America/New_York] PHP Notice:  Undefined variable: telephone in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 08:37:34 America/New_York] PHP Notice:  Undefined variable: telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 192
+[27-Oct-2020 08:37:35 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 08:37:35 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 14:21:00 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 14:21:00 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 14:21:05 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 14:21:05 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 14:21:05 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 14:21:05 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 139
+[27-Oct-2020 14:21:05 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 200
+[27-Oct-2020 14:21:20 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 172
+[27-Oct-2020 14:21:20 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 14:21:20 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 180
+[27-Oct-2020 14:21:20 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 187
+[27-Oct-2020 14:21:20 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 192
+[27-Oct-2020 14:21:20 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 200
+[27-Oct-2020 14:21:20 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 204
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 172
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 176
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 180
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 187
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 192
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 200
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 204
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 14:21:21 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 14:26:49 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 14:26:49 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 14:26:55 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 14:26:55 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 20:59:06 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 20:59:06 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 20:59:12 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 20:59:12 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 22:27:44 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 22:27:44 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 22:28:09 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 22:28:09 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 22:28:13 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 22:28:13 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 22:28:13 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 22:28:13 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 139
+[27-Oct-2020 22:28:13 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 200
+[27-Oct-2020 22:33:32 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 22:33:32 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 22:34:22 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 22:34:22 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 22:34:22 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 22:34:22 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 139
+[27-Oct-2020 22:34:22 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 200
+[27-Oct-2020 22:34:28 America/New_York] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 40
+[27-Oct-2020 22:36:06 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 22:36:06 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 22:36:06 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 22:36:06 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 139
+[27-Oct-2020 22:36:06 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 200
+[27-Oct-2020 22:36:13 America/New_York] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 40
+[27-Oct-2020 22:41:41 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 22:41:41 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 133
+[27-Oct-2020 22:41:41 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 22:41:41 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 139
+[27-Oct-2020 22:41:41 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 200
+[27-Oct-2020 22:41:48 America/New_York] PHP Fatal error:  Uncaught Error: Function name must be a string in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php:40
+Stack trace:
+#0 {main}
+  thrown in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 40
+[27-Oct-2020 22:43:46 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 22:43:46 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 22:43:52 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 22:43:52 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 22:43:52 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[27-Oct-2020 22:43:52 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[27-Oct-2020 22:43:52 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 173
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 177
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 181
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 188
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 193
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 205
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 22:44:00 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 23:01:49 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 23:01:49 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[27-Oct-2020 23:09:24 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 23:09:24 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[27-Oct-2020 23:09:24 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[27-Oct-2020 23:09:24 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[27-Oct-2020 23:09:24 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[27-Oct-2020 23:15:25 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[27-Oct-2020 23:15:25 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[28-Oct-2020 00:15:26 America/New_York] PHP Notice:  Undefined index: Telephone in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[28-Oct-2020 00:15:26 America/New_York] PHP Notice:  Undefined index: Telephone2 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 27
+[28-Oct-2020 00:38:13 America/New_York] PHP Notice:  Undefined index: email in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 26
+[28-Oct-2020 00:38:13 America/New_York] PHP Notice:  Undefined variable: Link in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 00:38:13 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 00:38:13 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 38
+[28-Oct-2020 00:38:13 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 00:38:13 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 114
+[28-Oct-2020 00:41:55 America/New_York] PHP Notice:  Undefined variable: Link in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 00:41:55 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 00:41:55 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 38
+[28-Oct-2020 00:41:55 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 00:41:55 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 114
+[28-Oct-2020 00:51:15 America/New_York] PHP Notice:  Undefined variable: Link in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 00:51:15 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 00:51:15 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 38
+[28-Oct-2020 00:51:15 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 00:51:15 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 114
+[28-Oct-2020 00:53:51 America/New_York] PHP Notice:  Undefined variable: Link in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 00:53:51 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 00:53:51 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 38
+[28-Oct-2020 00:53:51 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 00:53:51 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 114
+[28-Oct-2020 01:02:39 America/New_York] PHP Notice:  Undefined variable: Link in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 01:02:39 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 01:02:39 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 38
+[28-Oct-2020 01:02:39 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 01:02:39 America/New_York] PHP Notice:  Undefined variable: tele1 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 114
+[28-Oct-2020 01:02:43 America/New_York] PHP Notice:  Undefined variable: Link in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 01:02:43 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 34
+[28-Oct-2020 01:02:43 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, null given in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 38
+[28-Oct-2020 01:02:43 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 01:02:43 America/New_York] PHP Notice:  Undefined variable: tele1 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 114
+[28-Oct-2020 01:05:27 America/New_York] PHP Notice:  Undefined variable: tele1 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 114
+[28-Oct-2020 01:05:32 America/New_York] PHP Notice:  Undefined variable: tele1 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 114
+[28-Oct-2020 01:39:15 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 07:09:49 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 07:10:01 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 07:11:12 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 07:11:15 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[28-Oct-2020 07:11:15 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[28-Oct-2020 07:11:15 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[28-Oct-2020 07:11:15 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[28-Oct-2020 07:11:15 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[28-Oct-2020 07:11:23 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[28-Oct-2020 07:11:23 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[28-Oct-2020 07:11:23 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[28-Oct-2020 07:11:23 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[28-Oct-2020 07:11:23 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[28-Oct-2020 07:11:31 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 08:48:35 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 08:48:40 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[28-Oct-2020 08:48:40 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[28-Oct-2020 08:48:40 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[28-Oct-2020 08:48:40 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[28-Oct-2020 08:48:40 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[28-Oct-2020 08:49:05 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 10:36:17 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 10:36:23 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[28-Oct-2020 10:36:23 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[28-Oct-2020 10:36:23 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[28-Oct-2020 10:36:23 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[28-Oct-2020 10:36:23 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[28-Oct-2020 10:36:31 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 21:06:47 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[28-Oct-2020 21:06:52 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[29-Oct-2020 08:40:29 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[29-Oct-2020 08:40:33 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[29-Oct-2020 08:40:33 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[29-Oct-2020 08:40:33 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[29-Oct-2020 08:40:33 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[29-Oct-2020 08:40:33 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[29-Oct-2020 23:12:04 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[29-Oct-2020 23:12:07 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[29-Oct-2020 23:12:10 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[29-Oct-2020 23:12:10 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[29-Oct-2020 23:12:10 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[29-Oct-2020 23:12:10 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[29-Oct-2020 23:12:10 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[29-Oct-2020 23:12:18 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[29-Oct-2020 23:12:18 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[29-Oct-2020 23:12:18 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[29-Oct-2020 23:12:18 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[29-Oct-2020 23:12:18 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[29-Oct-2020 23:12:27 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[29-Oct-2020 23:12:27 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 134
+[29-Oct-2020 23:12:27 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 135
+[29-Oct-2020 23:12:27 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 140
+[29-Oct-2020 23:12:27 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 201
+[29-Oct-2020 23:12:28 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[30-Oct-2020 04:34:10 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 13
+[30-Oct-2020 04:35:44 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 13
+[30-Oct-2020 04:35:49 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 13
+[30-Oct-2020 04:37:56 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 13
+[30-Oct-2020 04:37:59 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 13
+[30-Oct-2020 04:38:02 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 13
+[30-Oct-2020 04:38:47 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 13
+[30-Oct-2020 04:39:00 America/New_York] PHP Parse error:  syntax error, unexpected '""' (T_CONSTANT_ENCAPSED_STRING) in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 13
+[30-Oct-2020 04:40:55 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[30-Oct-2020 04:43:53 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 04:43:53 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 04:43:53 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[30-Oct-2020 04:43:53 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 158
+[30-Oct-2020 04:43:53 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 219
+[30-Oct-2020 04:43:55 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 04:43:55 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 04:43:55 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[30-Oct-2020 04:43:55 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 158
+[30-Oct-2020 04:43:55 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 219
+[30-Oct-2020 04:44:05 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 04:44:05 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 04:44:05 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[30-Oct-2020 04:44:05 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 158
+[30-Oct-2020 04:44:05 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 219
+[30-Oct-2020 05:04:40 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 05:04:40 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 05:04:40 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[30-Oct-2020 05:04:40 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 158
+[30-Oct-2020 05:04:40 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 219
+[30-Oct-2020 05:04:44 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[30-Oct-2020 05:04:44 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[30-Oct-2020 05:04:44 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 199
+[30-Oct-2020 05:04:44 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 206
+[30-Oct-2020 05:04:44 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 211
+[30-Oct-2020 05:04:44 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 219
+[30-Oct-2020 05:04:44 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 223
+[30-Oct-2020 05:04:56 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 05:04:56 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[30-Oct-2020 05:04:56 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[30-Oct-2020 05:04:56 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 158
+[30-Oct-2020 05:04:56 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 219
+[30-Oct-2020 05:05:14 America/New_York] PHP Notice:  Undefined variable: hospital_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 191
+[30-Oct-2020 05:05:14 America/New_York] PHP Notice:  Undefined variable: address in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 195
+[30-Oct-2020 05:05:14 America/New_York] PHP Notice:  Undefined variable: district in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 199
+[30-Oct-2020 05:05:14 America/New_York] PHP Notice:  Undefined variable: chief_doctor in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 206
+[30-Oct-2020 05:05:14 America/New_York] PHP Notice:  Undefined variable: user_name in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 211
+[30-Oct-2020 05:05:14 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 219
+[30-Oct-2020 05:05:14 America/New_York] PHP Notice:  Undefined variable: telephone_arr in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 223
+[30-Oct-2020 10:05:30 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[30-Oct-2020 10:06:16 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[30-Oct-2020 23:08:29 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[30-Oct-2020 23:08:38 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[01-Nov-2020 01:49:56 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42
+[01-Nov-2020 23:16:23 America/New_York] PHP Notice:  Undefined variable: sql1 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[01-Nov-2020 23:16:23 America/New_York] PHP Warning:  mysqli_query(): Empty query in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 152
+[01-Nov-2020 23:16:23 America/New_York] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 153
+[01-Nov-2020 23:16:23 America/New_York] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 158
+[01-Nov-2020 23:16:23 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/edit.php on line 219
+[02-Nov-2020 08:04:31 America/New_York] PHP Notice:  Undefined offset: 0 in /home/himajimn/public_html/bloodbank/hospital/profile/index.php on line 42

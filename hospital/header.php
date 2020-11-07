@@ -27,7 +27,7 @@
 
 			<div class="logo">
 
-				
+
 
 			</div>
 
@@ -43,19 +43,19 @@
 
 					<li><a href="#">Campaigns</a></li>
 
-					<li><a href="logout.php">Log Out</a></li>
+					<li><a href="http://localhost/bloodbank/hospital/logout.php">Log Out</a></li>
 
 				</ul>
 
 			</div>	<!--top-bar-links-->
 
-			
+
 
 	</div>	<!--top-bar-->
 
 
 
-	
+
 
 
 
