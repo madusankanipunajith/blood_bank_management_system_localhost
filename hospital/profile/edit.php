@@ -35,11 +35,12 @@
     }
     $mobi1 = $telephone_arr[1];
     $mobi2 = $telephone_arr[0];
+    $count=mysqli_num_rows($result2);
 
 
     //close the db connection
-    mysqli_close($link); 
-    
+    mysqli_close($link);
+
 
 ?>
 <?php
@@ -51,9 +52,9 @@
         if (isset($_GET['user'])) {$username_err=$_GET['user'];}
         if (isset($_GET['email'])) {$email_err=$_GET['email'];}
         if (isset($_GET['mob'])) {$mobile_err=$_GET['mob'];}
-        
+
     }*/
-    
+
 
 ?>
 <?php
@@ -61,7 +62,7 @@
 ?>
 
 <body>
-    
+
     <div class="container-row hospital">
         <?php require_once "../dashboard.php";?>
 
@@ -83,12 +84,12 @@
                         <input type="text" name="district" class="form-control" value="<?php echo $district; ?>"> <!-- **** -->
                     </div>
                 </div>
-        
+
                 <div class="form-row">
                     <div class="form-group">
                         <label>Chief Doctor Name</label>
-                        <input type="text" name="drname" class="form-control"value="<?php echo $chief_doctor; ?>">  
-                           
+                        <input type="text" name="drname" class="form-control"value="<?php echo $chief_doctor; ?>">
+
                     </div>
                     <div class="form-group">
                         <label>User Name</label>
@@ -96,10 +97,10 @@
                     </div>
                     <div class="form-group">
                         <label>Email Address</label>
-                        <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">  
-                           
+                        <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
+
                     </div>
-                    
+
                 </div>
 
                 <div class="form-row">
@@ -111,8 +112,8 @@
                         <label>Telephone Number</label>
                         <input type="number" name="mobile2" class="form-control" value="<?php echo $mobi2; ?>">
                     </div>
-                
-                    
+
+
                 </div>
 
                 <!--
@@ -124,12 +125,12 @@
                     <div class="form-group">
                         <label>New Password</label>
                         <input type="text" name="addline1" class="form-control">
-                    </div> 
+                    </div>
                     <div class="form-group">
                         <label>Confirm Password</label>
                         <input type="text" name="addline2" class="form-control">
                     </div>
-                    
+
                 </div>
                 -->
 
@@ -142,7 +143,7 @@
 
             </form>
 
-               
+
         </div>
     </div>
     <?php include '../../footer.php'; ?>
