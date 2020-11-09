@@ -25,7 +25,7 @@
 ?>
 <body >
 
-	<div class="container">
+	<div class="container" style="display: inline;">
 		<div class="signup-content" >
 			<div style="float: left;">
 				<form action="application/add-campaign.php" method="post" class="campaign_reg_form" id="register-form">
