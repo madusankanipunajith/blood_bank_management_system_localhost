@@ -1,26 +1,31 @@
 <?php
     //session start
     require_once "../session.php";
-    
+    $count="";
+    if($_SERVER['REQUEST_METHOD']=="GET")
+    {
+        if (isset($_GET['cou'])) {$count=$_GET['cou'];}
+    }
+
     //variable declaration
     $hosname=$username=$drname=$dis=$add=$data2=$mobile=$mobile2=$mail="";
-    
+
     if($_SERVER["REQUEST_METHOD"]=="POST")
     {
         $data2=$_SESSION['id-5'];
-        
+
         //prepare statment
         $sql1="SELECT UserName FROM normal_hospital WHERE UserName = ?";
         if($stmt=mysqli_prepare($link,$sql1))
         {
-               
+
         mysqli_stmt_bind_param($stmt,"s",$para_username);
         //set parameters
         $para_username=trim($_POST["username"]);
         //execute the prepare statement
         if(mysqli_stmt_execute($stmt))
         {
-            
+
             //store the result
             mysqli_stmt_store_result($stmt);
             if(mysqli_stmt_num_rows($stmt)==1)
@@ -34,7 +39,7 @@
             mysqli_stmt_close($stmt);
         }
         }
-        
+
         // validate hospital name
         if(!empty(trim($_POST["hosname"])))
         {
@@ -92,7 +97,7 @@
 
             //prepare update statement
             $sql="UPDATE normal_hospital SET UserName=?, Name=?, Address=?, District=?, Chief=?, Email=? WHERE UserName='$data2'";
-        
+
             if($stmt=mysqli_prepare($link,$sql))
             {
                 mysqli_stmt_bind_param($stmt,"ssssss",$param_user,$param_name,$param_add,$param_dis,$param_dr,$param_email);
@@ -103,16 +108,20 @@
                 $param_dis=$dis;
                 $param_dr=$drname;
                 $param_email= $mail;
-            
+
                 //execute prepare statement
                 if(mysqli_stmt_execute($stmt))
                 {
                     $sql1= "UPDATE normal_hospital_telephone SET username='$username', TelephoneNo='$mobile' WHERE username='$data2' AND flag='1'";
                     if (mysqli_query($link, $sql1)){
-                        if (!empty($mobile2)) {
-                            $sql2= "UPDATE normal_hospital_telephone SET username='$username', TelephoneNo='$mobile2' WHERE username='$data2' AND flag='0'";
-                        mysqli_query($link, $sql2 );
-                        }
+                      if ($count==2) {
+                          $sql2= "UPDATE normal_hospital_telephone SET username='$username', TelephoneNo='$mobile2' WHERE username='$data2' AND flag='0'";
+                          mysqli_query($link, $sql2 );
+                      }
+                      else{
+                          $sql3= "INSERT INTO normal_hospital_telephone (username, TelephoneNo) VALUES ('$username','$mobile2')";
+                          mysqli_query($link,$sql3);
+                      }
                     }
                     else{
                         echo"something get wrong";
@@ -138,7 +147,7 @@
 
         }
          //close the db connection
-        mysqli_close($link); 
+        mysqli_close($link);
     }
 
 
