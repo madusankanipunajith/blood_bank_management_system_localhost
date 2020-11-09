@@ -11,7 +11,7 @@
     $today= date("Y-m-d");
 
         // queries
-        $sql = "SELECT HospitalID, Name FROM blood_bank_hospital";
+        $sql = "SELECT HospitalID, Name, District FROM blood_bank_hospital ORDER BY District";
         $result = mysqli_query($link, $sql);    
 
     if ($_SERVER["REQUEST_METHOD"] == "GET") {
@@ -76,6 +76,7 @@ mysqli_close($link);
                             <tr class="row100 head">
                             <th class="cell100 column6">H-ID</th>
                             <th class="cell100 column7">Hospital Name</th>
+                            <th class="cell100 column8">District</th>
                             </tr>
                             </thead>
                         </table>
@@ -88,9 +89,11 @@ mysqli_close($link);
     
                                     $id = $row["HospitalID"];
                                     $hosname = $row["Name"];
+                                    $district = $row["District"];
 
                                 echo "<tr class='row100 body'><td class='cell100 column6'>".$id."</td>";
-                                echo "<td class='cell100 column7'>".$hosname."</td></tr>";
+                                echo "<td class='cell100 column7'>".$hosname."</td>";
+                                echo "<td class='cell100 column8'>".$district."</td></tr>";
 
                                 }
                                 
