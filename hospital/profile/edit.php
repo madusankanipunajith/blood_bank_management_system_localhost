@@ -22,7 +22,7 @@
     else {
         echo "Something went wrong while loading...";
     }
-    $sql2="SELECT TelephoneNo FROM normal_hospital_telephone WHERE username='$nic'";
+    $sql2="SELECT TelephoneNo FROM normal_hospital_telephone WHERE username='$nic' ORDER BY Flag DESC";
     $result2=mysqli_query($link,$sql2);
     //create array
     $telephone_arr= array();
@@ -44,16 +44,17 @@
 
 ?>
 <?php
-    /*$org_err=$district_err=$president_err=$username_err=$mobile_err=$email_err=$mobile_err="";
+    $hos_err=$username_err=$dr_err=$email_err=$add_err=$dis_err=$mobile_err="";
     if($_SERVER['REQUEST_METHOD']=="GET"){
-        if (isset($_GET['org'])) {$org_err=$_GET['org'];}
-        if (isset($_GET['dis'])) {$district_err=$_GET['dis'];}
-        if (isset($_GET['pre'])) {$president_err=$_GET['pre'];}
+        if (isset($_GET['hos'])) {$hos_err=$_GET['hos'];}
         if (isset($_GET['user'])) {$username_err=$_GET['user'];}
+        if (isset($_GET['dr'])) {$dr_err=$_GET['dr'];}
         if (isset($_GET['email'])) {$email_err=$_GET['email'];}
-        if (isset($_GET['mob'])) {$mobile_err=$_GET['mob'];}
+        if (isset($_GET['add'])) {$add_err=$_GET['add'];}
+        if (isset($_GET['dis'])) {$dis_err=$_GET['dis'];}
+        if (isset($_GET['mobile'])) {$mobile_err=$_GET['mobile'];}
 
-    }*/
+    }
 
 
 ?>
@@ -69,33 +70,33 @@
         <div class="main">
             <div class="topic">
 
-            <form action="../application/edit.php" method="post"> <!--  echo htmlspecialchars($_SERVER["PHP_SELF"]); -->
+            <form action="../application/edit.php?cou=<?php echo $count; ?>&modi1=<?php echo $mobi1; ?>&mobi2=<?php echo $mobi2;?>" method="post"> <!--  echo htmlspecialchars($_SERVER["PHP_SELF"]); -->
                 <div class="form-row clearfix">
-                    <div class="form-group">
+                    <div class="form-group <?php echo (!empty($hos_err)) ? 'has-error' : ''; ?>">
                         <label>Hospital Name</label>
                         <input type="text" name="hosname" class="form-control" value="<?php echo $hospital_name; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <?php echo (!empty($add_err)) ? 'has-error' : ''; ?>">
                         <label>Address</label>
                         <input type="text" name="address" class="form-control" value="<?php echo $address; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <?php echo (!empty($dis_err)) ? 'has-error' : ''; ?>">
                         <label>District</label>
                         <input type="text" name="district" class="form-control" value="<?php echo $district; ?>"> <!-- **** -->
                     </div>
                 </div>
 
-                <div class="form-row">
+                <div class="form-row <?php echo (!empty($dr_err)) ? 'has-error' : ''; ?>">
                     <div class="form-group">
                         <label>Chief Doctor Name</label>
                         <input type="text" name="drname" class="form-control"value="<?php echo $chief_doctor; ?>">
 
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
                         <label>User Name</label>
                         <input type="text" name="username" class="form-control" value="<?php echo $user_name; ?>">
                     </div>
-                    <div class="form-group">
+                    <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
                         <label>Email Address</label>
                         <input type="text" name="email" class="form-control" value="<?php echo $email; ?>">
 
@@ -104,7 +105,7 @@
                 </div>
 
                 <div class="form-row">
-                    <div class="form-group">
+                    <div class="form-group <?php echo (!empty($mobile_err)) ? 'has-error' : ''; ?>">
                         <label>Telephone Number</label>
                         <input type="number" name="mobile" class="form-control" value="<?php echo $mobi1; ?>">
                     </div>
