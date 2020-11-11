@@ -28,7 +28,7 @@
                              <th class="cell100 column8">Hospital Name</th>
                              <th class="cell100 column4">Address</th> 
                               <th class="cell100 column6">District</th> 
-                             <th class="cell100 column6">Choose</th>     
+                             <th class="cell100 column6">Delete</th>     
                             </tr>
                             </thead>
                         </table>
@@ -47,7 +47,7 @@
                                 echo "<tr class='row100 body'><td class='cell100 column8'>".$name."</td>";
                                 echo "<td class='cell100 column4'>".$address."</td>";
                                 echo "<td class='cell100 column6'>".$district."</td>";
-                                echo "<td class='cell100 column6'><a href=\"delete_hospital?id=$id&name=$name&add=$address&dis=$district\" style=\"color:blue;\">Choose</a></td></tr>";
+                                echo "<td class='cell100 column6'><a href=\"delete_hospital?id=$id&name=$name&add=$address&dis=$district\"><i class='fa fa-trash'></i></a></td></tr>";
                             }
                                 
                             ?>

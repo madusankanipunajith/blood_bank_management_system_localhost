@@ -37,12 +37,8 @@ mysqli_close($link);
                     echo "<center><p style=\"color:green; font-size:20px;\">Appointement Sent Successfully !!!</p></center>";
                 }
             ?>
-
-            <div class="topic clearfix">
-                 <div class="form-style-2-heading">Donate Blood</div>
-            </div>
             
-            <form action="../application/donate_blood.php" method="post" style="padding-left: 20px;">
+            <form action="../application/donate_blood.php" method="post" style="padding-left: 20px; margin-top: 20px;">
                 <div class="limiter-2">
                 <div class=" donor_calander <?php echo (!empty($date_err)) ? 'has-error' : ''; ?>">
                 <label>Date :<input type="date" class="input-field" name="date" min="<?php echo($today);?>" value="" /></label>
@@ -62,6 +58,7 @@ mysqli_close($link);
 
                 <input type="submit" name="submit" value="Submit">
 
+                
 
                 </div>
             </form>
@@ -105,8 +102,16 @@ mysqli_close($link);
                     </div>
                 </div>
                     
-                    
+                <div style="margin-left: 35%;">
+                    <a href="latest_appointment" style="font-size: 20px;">
+                        <div class="tile-3">
+                        Latest Appointment
+                        </div>
+                    </a>
+                </div>
+                
             </div>
+
 
 
         </div>

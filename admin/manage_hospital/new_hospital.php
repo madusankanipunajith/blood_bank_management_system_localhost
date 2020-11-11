@@ -46,7 +46,19 @@
                     </div>
                     <div class="form-group <?php echo (!empty($district_err)) ? 'has-error' : ''; ?>">
                         <label>District</label>
-                        <input type="text" name="district">
+                        <?php
+                                $sql="SELECT name FROM district";
+                                $result=mysqli_query($link, $sql);
+                                if(mysqli_num_rows($result)){
+                                    $select= '<select name="district" class="form-control">';
+                                    $select.='<option value=""></option>';
+                                        while($rs=mysqli_fetch_array($result)){
+                                        $select.='<option value="'.$rs['name'].'">'.$rs['name'].'</option>';
+                                        }
+                                    }
+                                    $select.='</select>';
+                                    echo "$select";
+                            ?>
                         <span class="help-block "><?php echo $district_err; ?></span>
                     </div>
                 </div>

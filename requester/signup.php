@@ -69,34 +69,19 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                         </div>
                         <div class="form-group <?php echo (!empty($district_err)) ? 'has-error' : ''; ?>">
                             <label>District</label>
-                            <select id="location" name="district" class="form-control">
-                                <option value=""></option>
-                                <option value="Ampara">Ampara</option>
-                                <option value="Anuradhapura">Anuradhapura</option>
-                                <option value="Badulla">Badulla</option>
-                                <option value="Batticaloa">Batticoloa</option>
-                                <option value="Colombo">Colombo</option>
-                                <option value="Galle">Galle</option>
-                                <option value="Gampaha">Gampaha</option>
-                                <option value="Hambantota">Hambantota</option>
-                                <option value="Jaffna">Jaffna</option>
-                                <option value="Kalutara">Kalutara</option>
-                                <option value="Kandy">Kandy</option>
-                                <option value="Kegalle">Kegalle</option>
-                                <option value="Kilinochchi">Kilinochchi</option>
-                                <option value="Kurunegala">Kurunegala</option>
-                                <option value="Mannar">Mannar</option>
-                                <option value="Matale">Matale</option>
-                                <option value="Matara">Matara</option>
-                                <option value="Monaragala">Monaragala</option>
-                                <option value="Mullativu">Mullativu</option>
-                                <option value="Nuwara Eliya">Nuwara Eliya</option>
-                                <option value="Polonnaruwa">Polonnaruwa</option>
-                                <option value="Puttalam">Puttalam</option>
-                                <option value="Ratnapura">Ratnapura</option>
-                                <option value="Trincomalee">Trincomalee</option>
-                                <option value="Vavniya">Vavniya</option>
-                            </select>
+                            <?php
+                                $sql="SELECT name FROM district";
+                                $result=mysqli_query($link, $sql);
+                                if(mysqli_num_rows($result)){
+                                    $select= '<select name="district" class="form-control">';
+                                    $select.='<option value=""></option>';
+                                        while($rs=mysqli_fetch_array($result)){
+                                        $select.='<option value="'.$rs['name'].'">'.$rs['name'].'</option>';
+                                        }
+                                    }
+                                    $select.='</select>';
+                                    echo "$select";
+                            ?>
                             <span class="help-block"><?php echo $district_err; ?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($addline1_err)) ? 'has-error' : ''; ?>">

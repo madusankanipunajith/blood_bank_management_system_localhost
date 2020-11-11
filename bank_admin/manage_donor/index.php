@@ -15,8 +15,8 @@ $sql3="SELECT COUNT(DonorID) AS good FROM donor_satisfaction WHERE HospitalID='$
 $result3= mysqli_query($link, $sql3); while ($row = mysqli_fetch_assoc($result3)) {$good_count=$row["good"];}
 $sql4="SELECT COUNT(DonorID) AS bad FROM donor_satisfaction WHERE HospitalID='$bankid' AND Satisfaction='2'";
 $result4= mysqli_query($link, $sql4); while ($row = mysqli_fetch_assoc($result4)) {$bad_count=$row["bad"];}
-$good= ($good_count/$count)*100;
-$bad= ($bad_count/$count)*100;
+$good= intval(($good_count/$count)*100);
+$bad= intval(($bad_count/$count)*100);
 
 // Close connection
 mysqli_close($link);   

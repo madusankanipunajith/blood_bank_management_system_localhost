@@ -48,10 +48,12 @@
                 </div>
                 <input type="submit" name="submit">
             </form>
-            <br><br><br>
-            <div class="content">
-                <a href="index">Select Hospital / Campaign</a>
-            </div>
+            <br><br>
+            
+                <a href="index">
+                <div class="tile-3 clearfix">Hospital / Campaign</div>
+                </a>
+            
             </center>
         </div>
     </div>

@@ -149,15 +149,16 @@ mysqli_close($link);
             </div> 
 
         
-            <div class="form-row" style="margin-left: 25%;">
+            <div class="form-row" style="margin-left: 20%">
                 <div class="form-group">
                 <?php
-                    echo "<a class=\"check\" style=\"color: green;\" href=\"edit_donor.php?nic=$NIC\" onclick=\"return confirm('Are you sure to Edit?')\">Edit</a>";
+                    echo "<a style=\"color: green;\" href=\"edit_donor.php?nic=$NIC\" onclick=\"return confirm('Are you sure to Edit?')\">
+                    <div class=\"tile-3 clearfix\">Edit</div></a>";
                 ?>
                 </div>
                 <div class="form-group">
                 <?php
-                   echo "<a class=\"check\" style=\"color: red;\" href=\"../application/delete.php?nic=$NIC\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\">Delete</a>"; 
+                   echo "<a style=\"color: red;\" href=\"../application/delete.php?nic=$NIC\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\"><div class=\"tile-3 clearfix\" >Delete</div></a>"; 
                 ?>
                 </div>
             </div> 
