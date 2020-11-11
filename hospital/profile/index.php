@@ -23,7 +23,7 @@ if(mysqli_num_rows($result)>0)
 }
 
 //select telehone numbers
-$sql2 = "SELECT TelephoneNo FROM normal_hospital_telephone WHERE username='$nic'";
+$sql2 = "SELECT TelephoneNo FROM normal_hospital_telephone WHERE username='$nic' ORDER BY Flag DESC";
 $result2= mysqli_query($link,$sql2);
 $telephone_arr= array();
 $telephone_arr[1]= "";
@@ -45,19 +45,19 @@ require_once "../header.php";
 
     <div class="container-row hospital">
 
-     <?php require_once "../dashboard.php";?>   
+     <?php require_once "../dashboard.php";?>
 
 
-        <div class="main"> 
+        <div class="main">
 
             <?php
                 if (isset($_GET['update']))
                 {
                     echo "<p style=\"color:green;\">Update Successfully !!!</p>";
                 }
-                    
+
             ?>
-            
+
             <div class="limiter">
                 <div class="container-table100">
                     <div class="wrap-table100">
@@ -73,7 +73,7 @@ require_once "../header.php";
                                     </thead>
                                 </table>
                             </div>
-                           
+
 
                             <div class="table100-body">
                                 <table>
@@ -111,17 +111,17 @@ require_once "../header.php";
                                     <td class="cell100 column5"><?php echo $tel2; ?></td>
                                 </tr>
 
-                                
+
                                 </tbody>
                                 </table>
-                            </div>    
-                            
+                            </div>
+
                         </div>
                     </div>
                 </div>
-            </div> 
+            </div>
 
-        
+
             <div class="form-row" style="margin-left: 25%;">
                 <div class="form-group">
                 <?php
@@ -130,11 +130,11 @@ require_once "../header.php";
                 </div>
                 <div class="form-group">
                 <?php
-                   echo "<a class=\"check\" style=\"color: red;\" href=\"../application/delete.php\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\">Delete</a>"; 
+                   echo "<a class=\"check\" style=\"color: red;\" href=\"../application/delete.php\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\">Delete</a>";
                 ?>
                 </div>
-            </div> 
-                     
+            </div>
+
 
         </div>
 
@@ -145,4 +145,3 @@ require_once "../header.php";
 </body>
 
 </html>
-
