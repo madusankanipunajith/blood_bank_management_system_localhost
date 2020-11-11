@@ -1,10 +1,12 @@
 <?php
     //session start
     require_once "../session.php";
-    $count="";
+    $count=$mobi1=$mobi2="";
     if($_SERVER['REQUEST_METHOD']=="GET")
     {
         if (isset($_GET['cou'])) {$count=$_GET['cou'];}
+        if(isset($_GET['mobi1'])){$mobi1=$_GET['mobi1'];}
+        if(isset($_GET['mobi2'])){$mobi2=$_GET['mobi2'];}
     }
 
     //variable declaration
