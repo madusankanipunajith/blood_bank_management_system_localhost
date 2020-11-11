@@ -14,7 +14,7 @@
 ?>
 
 <?php
-   require 'header.php'; 
+   require '../header.php'; 
 ?>
 <body>
 
@@ -103,7 +103,7 @@
                             <input type="submit" class="btn btn-primary" value="Submit">
                             <input type="reset" class="btn btn-default" value="Reset">
                         </div>
-                        <p>Already have an account? <a href="../reg_login.php" style="color: #F78181">Login here</a>.</p>
+                        <p>Already have an account? <a href="../login/organization.php" style="color: #F78181">Login here</a>.</p>
                     </form>
                 </div>
             </div>

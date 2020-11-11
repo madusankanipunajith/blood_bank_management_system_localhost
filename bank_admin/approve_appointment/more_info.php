@@ -1,24 +1,35 @@
 <?php
 require_once "../session.php";
 require('../header.php');
+include '../encrypt.php';
 
 ?>
 <?php
 $bankid= $_SESSION["id-3"];
+$date=$nic=$count=$opp_id="";
 //date_default_timezone_set("Asia/Colombo");
-$date= date("Y-m-d");
+if (isset($_GET['date'])) {
+    $enc_date= $_GET['date'];
+    $date= Decrypt($enc_date);
+}
+if (isset($_GET['nic'])) {
+    $enc_nic= $_GET['nic'];
+    $nic= Decrypt($enc_nic);
+}
+if (isset($_GET['opp_id'])) {
+    $enc_opp_id= $_GET['opp_id'];
+    $opp_id= Decrypt($enc_opp_id);
+}
+
+
 $sql= "SELECT * FROM donor_reservation WHERE Dates='$date' AND HosID='$bankid' AND Flag='1' ORDER BY Tme ASC";
 $result= mysqli_query($link, $sql);
+$count= mysqli_num_rows($result);
 
  
 ?>
 <body>
-        <?php
-            if (isset($_GET['id'])) {
-                $reserved_id= $_GET['id'];
-                echo "<center><h5 style=\"color:green; margin-bottom:0px;\">'$reserved_id' was approved succesfully<h5></center>";
-            }
-        ?>
+        
 	
 	<div class="container-row admin">
         <?php
@@ -26,9 +37,9 @@ $result= mysqli_query($link, $sql);
         ?>
 
         <div class="main">
-            <div class="topic">
-                <div class="form-style-2-heading"><a href="index">Today Appointments</a></div>
-            </div>
+            <center>
+                <div><a href="more_info">Appointments in <?php echo "   ("."$date".")      =>     "."$count"; ?></a></div>
+            </center>
             <div class="container-table100">
                     <div style="width: 100%">
                         <div class="table100 ver2 m-b-110">
@@ -40,7 +51,6 @@ $result= mysqli_query($link, $sql);
                              <th class="cell100 column6">Full Name</th> 
                               <th class="cell100 column6">Gender</th> 
                              <th class="cell100 column6">District</th> 
-                             <th class="cell100 column6">Date</th>
                              <th class="cell100 column6">Time</th>  
                             </tr>
                             </thead>
@@ -53,7 +63,6 @@ $result= mysqli_query($link, $sql);
                                 while($row = mysqli_fetch_assoc($result)) {
                                     
                                     $id = $row["DonorID"];
-                                    $date = $row["Dates"];
                                     $time = $row["Tme"];
                                 $sql2="SELECT first_name, last_name, district, gender FROM donor WHERE nic='$id'";
                                 $result2= mysqli_query($link, $sql2);
@@ -69,7 +78,6 @@ $result= mysqli_query($link, $sql);
                                 echo "<td class='cell100 column6'>".$name."</td>";
                                 echo "<td class='cell100 column6'>".$gender."</td>";
                                 echo "<td class='cell100 column6'>".$district."</td>";
-                                echo "<td class='cell100 column6'>".$date."</td>";
                                 echo "<td class='cell100 column6'>".$time."</td>";
 
                             }
@@ -80,7 +88,20 @@ $result= mysqli_query($link, $sql);
                     </div>
                         </div>
                     </div>
-                    <center><a href="upcoming" style="color: #585858; font-size: 15px;">Upcoming Reservations</a></center>
+                    <center>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <a href="../application/opp_approve?id=<?php echo $nic;?>&opp_id=<?php echo $opp_id;?>" onclick="return confirm('confirm');">
+                                <div class="tile-3 clearfix">Approve</div>
+                                </a>
+                            </div>
+                            <div class="form-group">
+                                <a href="../application/opp_decline?id=<?php echo $nic;?>&opp_id=<?php echo $opp_id;?>" onclick="return confirm('confirm');">
+                                <div class="tile-3 clearfix">Decline</div>
+                                </a>
+                            </div>
+                        </div>
+                    </center>
                 </div>
             
         </div>

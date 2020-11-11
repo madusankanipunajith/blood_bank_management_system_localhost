@@ -169,10 +169,15 @@ mysqli_close($link);
                     
                 </div>
 
-                <center><label><input type="submit" value="Submit"></label></center>
-                <div>
-                    <a href="edit-password" style="color: #848484; font-size: 15px;">Edit Password</a>
+                <center><label><input type="submit" value="Submit"></label>
+
+                    <div>
+                    <a href="edit-password">
+                        <div class="tile-3">Edit Password</div>
+                    </a>
                 </div>
+                </center>
+                
 
             </form>
           

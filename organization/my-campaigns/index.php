@@ -5,6 +5,7 @@ require_once '../header.php';
 
 $time=$date=$estimate=$location=$name=$hosid=$hosname=$err=$status="";
 $username= $_SESSION["id-4"];
+$today= date("Y-m-d");
     // queries
 $sql = "SELECT * FROM campaign WHERE CampaignID=(SELECT MAX(CampaignID) FROM campaign WHERE OrganizationID= '$username')";
 
@@ -13,7 +14,7 @@ $result = mysqli_query($link, $sql);
 $count = mysqli_num_rows($result);
 
 if($count!=1){
-   $err= "###";
+   $err= "no result";
 }
 
 

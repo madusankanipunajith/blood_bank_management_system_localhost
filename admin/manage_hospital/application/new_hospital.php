@@ -1,8 +1,8 @@
 <?php
     require '../../session.php';
     // Define variables and initialize with empty values
-    $hosid=$name = $address= $telephone = $district = "";
-    $name_err = $address_err = $telephone_err = $district_err = ""; 
+    $hosid=$name = $address= $telephone = $district = $capacity="";
+    $name_err = $address_err = $telephone_err = $district_err = $capacity_err=""; 
  
     // Processing form data when form is submitted
     if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -56,6 +56,13 @@
         $address = trim($_POST["address"]);
     }
 
+    // Validate capacity
+    if(empty(trim($_POST["capacity"]))){
+        $capacity_err = "Please enter capacity";     
+    } else{
+        $capacity = trim($_POST["capacity"]);
+    }
+
     // Validate Telephone
     if(empty(trim($_POST["tel-1"]))){
         $telephone_err = "Please enter Telephone";     
@@ -68,13 +75,13 @@
     $telephone2 = trim($_POST["tel-2"]);
     //isempty($name_err) && isempty($district_err) && isempty($address_err) && isempty($telephone_err)
 
-    if (empty($name_err) && empty($district_err) && empty($address_err) && empty($telephone_err)) {
+    if (empty($name_err) && empty($district_err) && empty($address_err) && empty($telephone_err) && empty($capacity_err)) {
         // Prepare an insert statement
-        $sql = "INSERT INTO blood_bank_hospital (Name, District, Address) VALUES (?, ?, ?)";
+        $sql = "INSERT INTO blood_bank_hospital (Name, District, Address, Capacity) VALUES (?, ?, ?, ?)";
          
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sss", $param_username, $district, $address);
+            mysqli_stmt_bind_param($stmt, "ssss", $param_username, $district, $address, $capacity);
             
             // Set parameters
             $param_username = $name;
@@ -110,7 +117,7 @@
             mysqli_stmt_close($stmt);
         }
     }else{
-        header("Location: ../new_hospital?name=$name_err&add=$address_err&dis=$district_err&tel=$telephone_err");
+        header("Location: ../new_hospital?name=$name_err&add=$address_err&dis=$district_err&tel=$telephone_err&cap=$capacity_err");
     }
 
 

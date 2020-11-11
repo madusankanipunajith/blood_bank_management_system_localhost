@@ -1,13 +1,14 @@
 <?php
 require_once "../session.php";
 require('../header.php');
+include '../encrypt.php';
 
 ?>
 <?php
 $bankid= $_SESSION["id-3"];
 //date_default_timezone_set("Asia/Colombo");
 $date= date("Y-m-d");
-$sql= "SELECT * FROM donor_reservation WHERE Dates='$date' AND HosID='$bankid' AND Flag='1' ORDER BY Tme ASC";
+$sql= "SELECT * FROM donor_reservation WHERE HosID='$bankid' AND Flag='0' ORDER BY Tme ASC";
 $result= mysqli_query($link, $sql);
 
  
@@ -18,6 +19,10 @@ $result= mysqli_query($link, $sql);
                 $reserved_id= $_GET['id'];
                 echo "<center><h5 style=\"color:green; margin-bottom:0px;\">'$reserved_id' was approved succesfully<h5></center>";
             }
+            if (isset($_GET['dec'])) {
+                $reserved_id= $_GET['dec'];
+                echo "<center><h5 style=\"color:red; margin-bottom:0px;\">'$reserved_id' was deleted succesfully<h5></center>";
+            }
         ?>
 	
 	<div class="container-row admin">
@@ -27,7 +32,7 @@ $result= mysqli_query($link, $sql);
 
         <div class="main">
             <div class="topic">
-                <div class="form-style-2-heading"><a href="index">Today Appointments</a></div>
+                <div class="form-style-2-heading"><a href="index">Validate Appointments</a></div>
             </div>
             <div class="container-table100">
                     <div style="width: 100%">
@@ -41,7 +46,8 @@ $result= mysqli_query($link, $sql);
                               <th class="cell100 column6">Gender</th> 
                              <th class="cell100 column6">District</th> 
                              <th class="cell100 column6">Date</th>
-                             <th class="cell100 column6">Time</th>  
+                             <th class="cell100 column6">Time</th>
+
                             </tr>
                             </thead>
                         </table>
@@ -51,7 +57,7 @@ $result= mysqli_query($link, $sql);
                             <?php
                                 // output data of each row
                                 while($row = mysqli_fetch_assoc($result)) {
-                                    
+                                    $opp_id= $row["ID"];
                                     $id = $row["DonorID"];
                                     $date = $row["Dates"];
                                     $time = $row["Tme"];
@@ -69,9 +75,12 @@ $result= mysqli_query($link, $sql);
                                 echo "<td class='cell100 column6'>".$name."</td>";
                                 echo "<td class='cell100 column6'>".$gender."</td>";
                                 echo "<td class='cell100 column6'>".$district."</td>";
-                                echo "<td class='cell100 column6'>".$date."</td>";
+                                $encrypt_date= Encrypt($date);
+                                $encrypt_nic= Encrypt($id);
+                                $encrypt_opp_id= Encrypt($opp_id);
+                                echo "<td class='cell100 column6'><u><b><a href=\"more_info?date=$encrypt_date&nic=$encrypt_nic&opp_id=$encrypt_opp_id\">$date</a></b></u></td>";
                                 echo "<td class='cell100 column6'>".$time."</td>";
-
+                                
                             }
                                 
                             ?>
@@ -80,7 +89,7 @@ $result= mysqli_query($link, $sql);
                     </div>
                         </div>
                     </div>
-                    <center><a href="upcoming" style="color: #585858; font-size: 15px;">Upcoming Reservations</a></center>
+                    <center><a href="all_appointment" style="color: #585858; font-size: 15px;">All Appointments</a></center>
                 </div>
             
         </div>

@@ -55,8 +55,8 @@ mysqli_close($link);
                                 <table>
                                     <thead>
                                         <tr class="row100 head">
-                                            <th class="cell100 column4">Topic</th>
-                                            <th class="cell100 column5">Content</th>
+                                            <th class="cell100 column5">Time Slot</th>
+                                            <th class="cell100 column4">Capacity</th>
                                         </tr>
                                     </thead>
                                 </table>
@@ -66,28 +66,7 @@ mysqli_close($link);
                             <div class="table100-body">
                                 <table>
                                 <tbody>
-                                <tr class="row100 body">
-                                    <td class="cell100 column4">NIC</td>
-                                    <td class="cell100 column5"><?php echo $nic ?></td>
-                                </tr>
-                                <tr class="row100 body">
-                                    <td class="cell100 column4">Full Name</td>
-                                    <td class="cell100 column5"><?php echo $name; ?></td>
-                                </tr>
-                                <tr class="row100 body">
-                                    <td class="cell100 column4">Email</td>
-                                    <td class="cell100 column5"><?php echo $email; ?></td>
-                                </tr>
-
-                                <tr class="row100 body">
-                                    <td class="cell100 column4">Hospital Name</td>
-                                    <td class="cell100 column5"><?php echo $hospital; ?></td>
-                                </tr>
-
-                                <tr class="row100 body">
-                                    <td class="cell100 column4">Capacity per Day</td>
-                                    <td class="cell100 column5"><button onclick="update_capacity();"><?php echo $capacity." "; ?><i class="fa fa-edit"></i></button></td>
-                                </tr>
+                                
                                 
 
                                 </tbody>
@@ -118,6 +97,14 @@ mysqli_close($link);
         </div>
     </div>
 
-    
+    <script type="text/javascript">
+        function update_capacity(){
+            var capacity= prompt("Please enter the capacity today","");
+            if (capacity!=null) {
+             window.location.href = "/bloodbank/bank_admin/application/edit_capacity.php?cap="+capacity;
+            }
+   
+        }
+    </script>
 
 <?php include '../../footer.php'; ?>

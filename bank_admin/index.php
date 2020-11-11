@@ -12,12 +12,15 @@ $bankid= $_SESSION["id-3"];
 require_once 'header.php';
 //date_default_timezone_set("Asia/Colombo");
 $date= date("Y-m-d");
-$sql= "SELECT COUNT(DISTINCT DonorID) AS count FROM donor_reservation WHERE HosID='$bankid' AND Flag='0' AND Dates='$date'";
+$sql= "SELECT COUNT(DISTINCT DonorID) AS count FROM donor_reservation WHERE HosID='$bankid' AND Flag='1' AND Dates='$date'";
 $result= mysqli_query($link, $sql);
 while ($row = mysqli_fetch_assoc($result)) {$count=$row["count"];}
 $sql2= "SELECT COUNT(DISTINCT CampaignID) AS count FROM campaign WHERE BHospitalID='$bankid' AND Flag='0' AND Dates>='$date'";
 $result2= mysqli_query($link, $sql2);
 while ($rows = mysqli_fetch_assoc($result2)) {$count2=$rows["count"];}
+$sql3= "SELECT COUNT(DISTINCT DonorID) AS count FROM donor_reservation WHERE HosID='$bankid' AND Flag='0' AND Dates>='$date'";
+$result3= mysqli_query($link, $sql3);
+while ($row = mysqli_fetch_assoc($result3)) {$count3=$row["count"];}
 
 // Close connection
 mysqli_close($link);
@@ -55,24 +58,31 @@ mysqli_close($link);
                     <!--digital clock end-->
                 </center>
 
-                <div class="tile-container">
-                     <div class="tile-row">
+                
+                    <div class="tile-container">
+                    <div class="tile-row">
                     <a href="appointments/index">
-                        <div class="tile-2">
+                        <div class="tile-2" style="width: 350px; margin-right: 20px; margin-left: 10px;">
                             <h2><b>Today Appointments</b></h2>
                             <center><h1><b><?php echo "$count";?></b></h1></center>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                            
                         </div>
                     </a>
                     <a href="manage_campaign/index">
-                    <div class="tile-2">
+                    <div class="tile-2" style="width: 350px; margin-right: 20px;">
                         <h2><b>New Campaigns</b></h2>
                          <center><h1><b><?php echo "$count2";?></b></h2></center>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                    </div>
+                    </a>
+                    <a href="approve_appointment/index">
+                    <div class="tile-2" style="width: 350px;">
+                        <h2><b>New Appointment</b></h2>
+                         <center><h1><b><?php echo "$count3";?></b></h2></center>
                     </div>
                     </a>
                     </div>   
                 </div>
+                
             
 
             
