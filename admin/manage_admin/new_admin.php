@@ -26,9 +26,11 @@
         ?>
         <div class="main clearfix">
             <div class="topic">
-            <div class="form-style-2-heading">Add New Admin</div><br>
-            
-
+                <div class="form-style-2-heading">Add New Admin</div><br>
+                <div style="float: right; margin-top: -110px; margin-right: 20px;" class="clearfix">
+                    <button onclick="blood_bank_list()">Hospital IDs</button>
+                </div> 
+            </div>
             <form action="application/new_admin.php" method="post">
                     <div class="form-row">
                             <div class="form-group <?php echo (!empty($first_name_err)) ? 'has-error' : ''; ?>">
@@ -43,7 +45,20 @@
                             </div>
                             <div class="form-group <?php echo (!empty($hosid_err)) ? 'has-error' : ''; ?>">
                                 <label>Hospital ID</label>
-                                <input type="number" name="hosid">
+                                
+                                <?php
+                                    $sql2="SELECT HospitalID FROM blood_bank_hospital";
+                                    $result2=mysqli_query($link, $sql2);
+                                    if(mysqli_num_rows($result2)){
+                                        $select= '<select name="hosid" class="form-control">';
+                                        $select.='<option value="">Choose an H-ID</option>';
+                                        while($rs=mysqli_fetch_array($result2)){
+                                        $select.='<option value="'.$rs['HospitalID'].'">'.$rs['HospitalID'].'</option>';
+                                        }
+                                    }
+                                        $select.='</select>';
+                                        echo "$select";
+                                ?>
                                 <span class="help-block "><?php echo $hosid_err; ?></span>
                             </div>
                     </div>
@@ -77,16 +92,11 @@
                     <center><input type="submit" class="btn btn-primary" value="Submit"></center>
 
             </form>
-          
 
-            </div>
-
-            <div style="float: right; margin-top: -275px; margin-right: 20px;" class="clearfix">
-                <button onclick="blood_bank_list()">Hospital IDs</button>
-            </div>    
+               
         </div>
     </div>
-
+<?php mysqli_close($link); ?>
 </body>
 </html>
                 

@@ -24,7 +24,7 @@ function requester_reg() {
 
 function add_campaign() {
 
-    window.open("http://himal.dev/bloodbank/organization/add_campaign.php");
+    window.open("/bloodbank/organization/add_campaign.php");
 
 }
 
@@ -53,9 +53,108 @@ function req_1() {
 }
 
 function blood_bank_list(){
-    window.open("http://himal.dev/bloodbank/admin/blood_banks.php");
+    window.open("/bloodbank/admin/blood_banks.php");
 }
 
+function update_capacity(){
+            var capacity= prompt("Please enter the capacity today","");
+            if (capacity!=null) {
+             window.location.href = "/bloodbank/bank_admin/application/edit_capacity.php?cap="+capacity;
+            }
+   
+        }
+
+function test(a,b,c,d,e,f,g,h) {
+
+    var chart = new CanvasJS.Chart("chartContainer",
+    {
+        
+        legend: {
+            maxWidth: 350,
+            itemWidth: 120
+        },
+        data: [
+        {
+            type: "pie",
+            showInLegend: true,
+            legendText: "{indexLabel}",
+            dataPoints: [
+                { y: a, indexLabel: "O+" },
+                { y: b, indexLabel: "O-" },
+                { y: c, indexLabel: "A+" },
+                { y: d, indexLabel: "A-"},
+                { y: e, indexLabel: "B+" },
+                { y: f, indexLabel: "B-"},
+                { y: g, indexLabel: "AB+"},
+                { y: h, indexLabel: "AB-"}
+            ]
+        }
+        ]
+    });
+    chart.render();
+}
+
+
+function requester_province(a,b,c,d,e,f,g,h,i) {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2", // "light1", "light2", "dark1", "dark2"
+    
+    axisY: {
+        title: "No of requesters"
+    },
+    data: [{        
+        type: "column",  
+        showInLegend: true, 
+        //legendMarkerColor: "grey",
+        legendText: "Province",
+        dataPoints: [      
+            { y: a, label: "North" },
+            { y: b,  label: "East" },
+            { y: c,  label: "North Central" },
+            { y: d,  label: "North Western" },
+            { y: e,  label: "Sabaragamuwa" },
+            { y: f, label: "Uwa" },
+            { y: g,  label: "South" },
+            { y: h,  label: "Central" },
+            { y: i,  label: "Western" }
+        ]
+    }]
+});
+chart.render();
+
+}
+
+function donor_district(a,b,c,d,e,f,g,h) {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+    animationEnabled: true,
+    theme: "light2", // "light1", "light2", "dark1", "dark2"
+    
+    axisY: {
+        title: "No of Donors"
+    },
+    data: [{        
+        type: "column",  
+        showInLegend: true, 
+        //legendMarkerColor: "grey",
+        legendText: "BloodGroup",
+        dataPoints: [      
+            { y: a, label: "O+" },
+            { y: b,  label: "O-" },
+            { y: c,  label: "A+" },
+            { y: d,  label: "A-" },
+            { y: e,  label: "B+" },
+            { y: f, label: "B-" },
+            { y: g,  label: "AB+" },
+            { y: h,  label: "AB-" }
+        ]
+    }]
+});
+chart.render();
+
+}
 
 /*
 

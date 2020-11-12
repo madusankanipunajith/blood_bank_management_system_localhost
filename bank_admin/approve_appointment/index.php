@@ -79,7 +79,7 @@ $result= mysqli_query($link, $sql);
                                 $encrypt_nic= Encrypt($id);
                                 $encrypt_opp_id= Encrypt($opp_id);
                                 echo "<td class='cell100 column6'><u><b><a href=\"more_info?date=$encrypt_date&nic=$encrypt_nic&opp_id=$encrypt_opp_id\">$date</a></b></u></td>";
-                                echo "<td class='cell100 column6'>".$time."</td>";
+                                echo "<td class='cell100 column6'>".$time."</td></tr>";
                                 
                             }
                                 
