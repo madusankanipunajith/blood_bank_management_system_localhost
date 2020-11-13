@@ -23,11 +23,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $volume = trim($_POST["volume"]);
     }
 
+    $sql1 ="SELECT StockID FROM blood_stock INNER JOIN blood ON blood_stock.BloodID=blood.BloodID WHERE blood_stock.Volume>='$volume' AND blood.Type='$btype'";
+    $result1= mysqli_query($link,$sql1);
+    $count = mysqli_num_rows($result1);
+
     if(empty($btype_err) && empty($volume_err)){
-        //$sql = "SELECT first_name, last_name, addressline1, addressline2, bloodgroup, telephone FROM donor WHERE bloodgroup = '$bgroup'";
-       //$sql="SELECT Name, Address FROM blood_bank_hospital INNER JOIN blood_stock ON blood_bank_hospital.HospitalID=blood_stock.StockID INNER JOIN blood ON blood_stock.BloodId=blood.BloodID WHERE blood.Type='$btype' AND blood_stock.Volume>='$volume'";
-       $sql="SELECT blood_bank_hospital.Name, blood_bank_hospital.District, GROUP_CONCAT(blood_bank_hospital_telephone.TelephoneNo SEPARATOR ' / ') blood_bank_hospital_telephone FROM blood_bank_hospital INNER JOIN blood_bank_hospital_telephone ON blood_bank_hospital.HospitalID=blood_bank_hospital_telephone.BBID INNER JOIN blood_stock ON blood_bank_hospital.HospitalID=blood_stock.StockID INNER JOIN blood ON blood_stock.BloodId=blood.BloodID WHERE blood.Type='$btype' AND blood_stock.Volume>='$volume' GROUP BY blood_bank_hospital.Name, blood_bank_hospital.District";
-       $result = mysqli_query($link, $sql);
+      if($count > 0){
+
+        $sql="SELECT blood_bank_hospital.Name, blood_bank_hospital.District, GROUP_CONCAT(blood_bank_hospital_telephone.TelephoneNo SEPARATOR ' / ') blood_bank_hospital_telephone FROM blood_bank_hospital INNER JOIN blood_bank_hospital_telephone ON blood_bank_hospital.HospitalID=blood_bank_hospital_telephone.BBID INNER JOIN blood_stock ON blood_bank_hospital.HospitalID=blood_stock.StockID INNER JOIN blood ON blood_stock.BloodId=blood.BloodID WHERE blood.Type='$btype' AND blood_stock.Volume>='$volume' GROUP BY blood_bank_hospital.Name, blood_bank_hospital.District";
+        $result = mysqli_query($link, $sql);
+
+      }
+      else {
+
+         header("location: avilable-result.php");
+      }
+
+
     }
     else{
         header("location: ../search_hospital/index.php?berror=$btype_err&verror=$volume_err");
@@ -75,25 +87,21 @@ require_once "../header.php";
         						<table>
         							<tbody>
         							    <?php
-                                           if (mysqli_num_rows($result) > 0) {
-                                                  // output data of each row
-                                                while($row = mysqli_fetch_assoc($result)) {
-                                                    $name = $row["Name"];
-                                                    $district = $row["District"];
-                                                    $mobile = $row["blood_bank_hospital_telephone"];
-                                                    //echo "<tr class='row100 body'><td class='cell100 column1'>".$firstname." ".$lastname."</td>";
-                                                    echo "<td class='cell100 column3'>".$name."</td>";
-                                                    echo "<td class='cell100 column3'>".$district."</td>";
-                                                    echo "<td class='cell100 column3'>".$mobile."</td>";
+                                  while($row = mysqli_fetch_assoc($result)) {
+                                          $name = $row["Name"];
+                                          $district = $row["District"];
+                                          $mobile = $row["blood_bank_hospital_telephone"];
+                                          //echo "<tr class='row100 body'><td class='cell100 column1'>".$firstname." ".$lastname."</td>";
+                                          echo "<td class='cell100 column3'><a href=\"request.php?blood=$btype&vol=$volume&hos=$name\">".$name."</a></td>";
+                                          echo "<td class='cell100 column3'>".$district."</td>";
+                                          echo "<td class='cell100 column3'>".$mobile."</td>";
 
-                                                    echo "</tr>";
-                                                }
-                                            }
+                                          echo "</tr>";
+                                        }
+                                    }
 
-                                          }else {
-                                                  echo "0 results";
-                                            }
-                                        ?>
+
+                                  ?>
         							</tbody>
         						</table>
         					</div>
@@ -101,6 +109,9 @@ require_once "../header.php";
 			        </div>
 		        </div>
 	        </div>
+          <div style="font-size:20px; color:#848484; text-align:center;">Click on the Hospital name to send a Request</div>
+
+       </div>
 
         </div>
     </div>
