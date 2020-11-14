@@ -31,6 +31,13 @@
             <div class="topic">
                 <div class="form-style-2-heading">Search Hospital</div>
             </div>
+            <?php
+                  if (isset($_GET['request']))
+                  {
+                      echo "<p style=\"color:green; text-align:center;\">Request send Successfully !!!</p>";
+                  }
+
+              ?>
             <div class="type-check">
                 <form action="hospital_result.php" method="POST">
                   <div class="form-check <?php echo (!empty($blood_error)) ? 'has-error' : ''; ?>">
@@ -51,7 +58,7 @@
                 <div class="form-check <?php echo (!empty($volume_error)) ? 'has-error' : ''; ?>">
                      <label >Enter Volumn</label>
                      <input type="text" name="volume" class="form-control" value="">
-                </div>           
+                </div>
                     <br><br>
                     <input type="submit" value="Submit">
                </form>

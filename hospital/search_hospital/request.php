@@ -1,13 +1,21 @@
 
 <?php
     require '../session.php';
-   $btype=$volume=$hospital="";
+   $btype=$volume=$hid="";
    if($_SERVER['REQUEST_METHOD']=="GET")
    {
      if(isset($_GET['blood'])){$btype=$_GET['blood'];}
      if (isset($_GET['vol'])) {$volume=$_GET['vol'];}
-     if (isset($_GET['hos'])) {$hospital=$_GET['hos'];}
+     if (isset($_GET['id'])) {$hid=$_GET['id'];}
    }
+
+   //select hospital name
+  $sql = "SELECT Name FROM blood_bank_hospital WHERE HospitalID='$hid'";
+  $result = mysqli_query($link,$sql);
+  while ($row = mysqli_fetch_assoc($result)) {
+    // code...
+    $hospital=$row["Name"];
+  }
 
 
     require '../header.php';
@@ -34,6 +42,11 @@
             <div class="form-group">
                  <label >Request Blood Volumn</label>
                  <input type="text" name="volume" class="form-control" value=",<?php echo $volume ?>">
+            </div>
+
+            <div class="form-group">
+                 <label >Hospital ID</label>
+                 <input type="text" name="id" class="form-control" value="<?php echo $hid ?>">
             </div>
 
             <div class="form-group">

@@ -30,7 +30,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($btype_err) && empty($volume_err)){
       if($count > 0){
 
-        $sql="SELECT blood_bank_hospital.Name, blood_bank_hospital.District, GROUP_CONCAT(blood_bank_hospital_telephone.TelephoneNo SEPARATOR ' / ') blood_bank_hospital_telephone FROM blood_bank_hospital INNER JOIN blood_bank_hospital_telephone ON blood_bank_hospital.HospitalID=blood_bank_hospital_telephone.BBID INNER JOIN blood_stock ON blood_bank_hospital.HospitalID=blood_stock.StockID INNER JOIN blood ON blood_stock.BloodId=blood.BloodID WHERE blood.Type='$btype' AND blood_stock.Volume>='$volume' GROUP BY blood_bank_hospital.Name, blood_bank_hospital.District";
+        $sql="SELECT blood_bank_hospital.HospitalID, blood_bank_hospital.Name, blood_bank_hospital.District, GROUP_CONCAT(blood_bank_hospital_telephone.TelephoneNo SEPARATOR ' / ') blood_bank_hospital_telephone FROM blood_bank_hospital INNER JOIN blood_bank_hospital_telephone ON blood_bank_hospital.HospitalID=blood_bank_hospital_telephone.BBID INNER JOIN blood_stock ON blood_bank_hospital.HospitalID=blood_stock.StockID INNER JOIN blood ON blood_stock.BloodId=blood.BloodID WHERE blood.Type='$btype' AND blood_stock.Volume>='$volume' GROUP BY blood_bank_hospital.Name, blood_bank_hospital.District";
         $result = mysqli_query($link, $sql);
 
       }
@@ -75,9 +75,10 @@ require_once "../header.php";
         						<table>
         							<thead>
         								<tr class="row100 head">
+                          <th class="cell100 column6">Hospital ID</th>
         									<th class="cell100 column3">Name</th>
         									<th class="cell100 column3">District</th>
-                          <th class="cell100 column3">Telephone Numbers</th>
+                          <th class="cell100 column4">Telephone Numbers</th>
         								</tr>
         							</thead>
         						</table>
@@ -88,11 +89,13 @@ require_once "../header.php";
         							<tbody>
         							    <?php
                                   while($row = mysqli_fetch_assoc($result)) {
+                                          $id = $row["HospitalID"];
                                           $name = $row["Name"];
                                           $district = $row["District"];
                                           $mobile = $row["blood_bank_hospital_telephone"];
                                           //echo "<tr class='row100 body'><td class='cell100 column1'>".$firstname." ".$lastname."</td>";
-                                          echo "<td class='cell100 column3'><a href=\"request.php?blood=$btype&vol=$volume&hos=$name\">".$name."</a></td>";
+                                          echo "<td class='cell100 column6'><a href=\"request.php?blood=$btype&vol=$volume&id=$id\">".$id."</a></td>";
+                                          echo "<td class='cell100 column3'>".$name."</td>";
                                           echo "<td class='cell100 column3'>".$district."</td>";
                                           echo "<td class='cell100 column3'>".$mobile."</td>";
 
@@ -109,7 +112,7 @@ require_once "../header.php";
 			        </div>
 		        </div>
 	        </div>
-          <div style="font-size:20px; color:#848484; text-align:center;">Click on the Hospital name to send a Request</div>
+          <div style="font-size:20px; color:#848484; text-align:center;">Click on the Hospital ID to send a  Blood Request</div>
 
        </div>
 
