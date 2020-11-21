@@ -4,7 +4,7 @@ require_once "../config.php";
  
 // Define variables and initialize with empty values
 $nic = $password = $confirm_password = $first_name = $last_name = $dob = $bgroup = $gender = $addline1 = $addline2 = $telephone = $district = $email = "";
-$nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_err = $dob_err = $bgroup_err = $gender_err = $addline1_err = $addline2_err = $telephone_err = $district_err = $email_err = "";
+$nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_err = $dob_err = $bgroup_err = $gender_err = $addline1_err = $addline2_err = $telephone_err = $telephone2_err = $district_err = $email_err = "";
 
     if ($_SERVER["REQUEST_METHOD"] == "GET") {
         if (isset($_GET['nic'])) {$nic_err=$_GET['nic'];}
@@ -15,6 +15,7 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
         if (isset($_GET['conf'])) {$confirm_password_err=$_GET['conf'];}
         if (isset($_GET['email'])) {$email_err=$_GET['email'];}
         if (isset($_GET['tel'])) {$telephone_err=$_GET['tel'];}
+        if (isset($_GET['tel'])) {$telephone2_err=$_GET['tel2'];}
         if (isset($_GET['add'])) {$addline1_err=$_GET['add'];}
         if (isset($_GET['dob'])) {$dob_err=$_GET['dob'];}
     }
@@ -51,34 +52,19 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
 
                         <div class="form-group <?php echo (!empty($district_err)) ? 'has-error' : ''; ?>">
                             <label>District</label>
-                            <select id="location" name="location" class="form-control">
-                                <option value=""></option>
-                                <option value="Ampara">Ampara</option>
-                                <option value="Anuradhapura">Anuradhapura</option>
-                                <option value="Badulla">Badulla</option>
-                                <option value="Batticaloa">Batticoloa</option>
-                                <option value="Colombo">Colombo</option>
-                                <option value="Galle">Galle</option>
-                                <option value="Gampaha">Gampaha</option>
-                                <option value="Hambantota">Hambantota</option>
-                                <option value="Jaffna">Jaffna</option>
-                                <option value="Kalutara">Kalutara</option>
-                                <option value="Kandy">Kandy</option>
-                                <option value="Kegalle">Kegalle</option>
-                                <option value="Kilinochchi">Kilinochchi</option>
-                                <option value="Kurunegala">Kurunegala</option>
-                                <option value="Mannar">Mannar</option>
-                                <option value="Matale">Matale</option>
-                                <option value="Matara">Matara</option>
-                                <option value="Monaragala">Monaragala</option>
-                                <option value="Mullativu">Mullativu</option>
-                                <option value="Nuwara Eliya">Nuwara Eliya</option>
-                                <option value="Polonnaruwa">Polonnaruwa</option>
-                                <option value="Puttalam">Puttalam</option>
-                                <option value="Ratnapura">Ratnapura</option>
-                                <option value="Trincomalee">Trincomalee</option>
-                                <option value="Vavniya">Vavniya</option>
-                            </select>
+                            <?php
+                                $sql="SELECT name FROM district";
+                                $result=mysqli_query($link, $sql);
+                                if(mysqli_num_rows($result)){
+                                    $select= '<select name="location" class="form-control">';
+                                    $select.='<option value=""></option>';
+                                        while($rs=mysqli_fetch_array($result)){
+                                        $select.='<option value="'.$rs['name'].'">'.$rs['name'].'</option>';
+                                        }
+                                    }
+                                    $select.='</select>';
+                                    echo "$select";
+                            ?>
                             <span class="help-block"><?php echo $district_err; ?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($bgroup_err)) ? 'has-error' : ''; ?>">
@@ -129,9 +115,10 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                             <input type="number" name="telephone-1" class="form-control">
                             <span class="help-block"><?php echo $telephone_err; ?></span>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group <?php echo (!empty($telephone2_err)) ? 'has-error' : ''; ?>">
                             <label>Telephone(Optional)</label>
                             <input type="number" name="telephone-2" class="form-control">
+                            <span class="help-block"><?php echo $telephone2_err; ?></span>
                         </div>
                         
                         <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
@@ -145,10 +132,10 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                             <span class="help-block"><?php echo $confirm_password_err; ?></span>
                         </div>
                         <div class="form-group">
-                            <input type="submit" class="btn btn-primary" value="Submit">
+                            <input type="submit"  value="Submit">
                             <input type="reset" class="btn btn-default" value="Reset">
                         </div>
-                        <p>Already have an account? <a href="../login/donor.php" style="color: #F78181;">Login here</a>.</p>
+                        <p>Already have an account? <b><a href="../login/donor.php" style="color: red;">Login here</a></b></p>
                     </form>
                 </div>
             </div>

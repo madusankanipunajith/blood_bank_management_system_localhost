@@ -3,13 +3,14 @@
    require '../header.php';
     // Define variables and initialize with empty values
     $hosid=$name = $address= $telephone = $district = "";
-    $name_err = $address_err = $telephone_err = $district_err = ""; 
+    $name_err = $address_err = $telephone_err = $district_err = $capacity_err=""; 
  
-    if (isset($_GET['name']) || isset($_GET['add']) || isset($_GET['dis']) || isset($_GET['tel'])) {
+    if (isset($_GET['name']) || isset($_GET['add']) || isset($_GET['dis']) || isset($_GET['tel']) || isset($_GET['cap'])) {
         $name_err= $_GET['name'];
         $address_err= $_GET['add'];
         $district_err= $_GET['dis'];
         $telephone_err= $_GET['tel'];
+        $capacity_err= $_GET['cap'];
     }
 
 ?>
@@ -31,6 +32,11 @@
                         <input type="text" name="name">
                         <span class="help-block "><?php echo $name_err; ?></span>
                     </div>
+                    <div class="form-group <?php echo (!empty($capacity_err)) ? 'has-error' : ''; ?>" style="width: 100%;">
+                        <label>Capacity per Day</label>
+                        <input type="number" name="capacity">
+                        <span class="help-block "><?php echo $capacity_err; ?></span>
+                    </div>
                 </div>
                 <div class="form-row">
                      <div class="form-group <?php echo (!empty($address_err)) ? 'has-error' : ''; ?>">
@@ -40,7 +46,19 @@
                     </div>
                     <div class="form-group <?php echo (!empty($district_err)) ? 'has-error' : ''; ?>">
                         <label>District</label>
-                        <input type="text" name="district">
+                        <?php
+                                $sql="SELECT name FROM district";
+                                $result=mysqli_query($link, $sql);
+                                if(mysqli_num_rows($result)){
+                                    $select= '<select name="district" class="form-control">';
+                                    $select.='<option value=""></option>';
+                                        while($rs=mysqli_fetch_array($result)){
+                                        $select.='<option value="'.$rs['name'].'">'.$rs['name'].'</option>';
+                                        }
+                                    }
+                                    $select.='</select>';
+                                    echo "$select";
+                            ?>
                         <span class="help-block "><?php echo $district_err; ?></span>
                     </div>
                 </div>

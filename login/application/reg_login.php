@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 if(isset($_SESSION["id-1"]) && isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
   header("Location: ../../donor/index");
   exit;

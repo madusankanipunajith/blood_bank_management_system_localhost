@@ -5,7 +5,7 @@
 
 ?>
 
-<body class="">
+<body>
 
 
 	<div class="container-row donor">
@@ -70,6 +70,6 @@
 
     </div>
 
-
+ </div>
 
 <?php include '../../footer.php'; ?>

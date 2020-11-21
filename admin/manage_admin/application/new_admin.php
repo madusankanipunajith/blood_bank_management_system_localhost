@@ -151,5 +151,7 @@
     // Close connection
     mysqli_close($link);
     
+    }else{
+        header("Location:../../../reg_login.php");
     }
 ?>

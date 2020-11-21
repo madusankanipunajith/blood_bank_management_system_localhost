@@ -3,7 +3,7 @@
     require '../header.php';
 ?>
 <?php
-    $firstname=$lastname=$id=$email=$name="";
+    $firstname=$lastname=$id=$email=$name=$capacity="";
     $nic= $_SESSION["id_card3"];$id="";
     $sql= "SELECT FirstName, LastName, BloodBankID, Email FROM blood_bank_admin WHERE NIC='$nic'";
     $result = mysqli_query($link, $sql);
@@ -18,9 +18,9 @@ if (mysqli_num_rows($result) > 0) {
     $name = $firstname." ".$lastname; 
 
   }
-  $sql2= "SELECT Name FROM blood_bank_hospital WHERE HospitalID='$id'";
+  $sql2= "SELECT Name, Capacity FROM blood_bank_hospital WHERE HospitalID='$id'";
   $result2= mysqli_query($link, $sql2);
-  while ($rows = mysqli_fetch_assoc($result2)) {$hospital= $rows["Name"];}
+  while ($rows = mysqli_fetch_assoc($result2)) {$hospital= $rows["Name"];$capacity=$rows["Capacity"];}
 
 } 
 // Close connection
@@ -35,13 +35,14 @@ mysqli_close($link);
         ?>
 
         <div class="main">
-            <div class="topic">
-                <div class="form-style-2-heading">Profile</div>
-            </div>
+            
             
             <?php
                 if (isset($_GET['update'])) {
                     echo "<p style=\"color:green;\">Update Successfully !!!</p>";
+                }
+                if (isset($_GET['numer'])) {
+                    echo "<p style=\"color:red;\">please enter a numeric value !!!</p>";
                 }
             ?>
             
@@ -82,6 +83,11 @@ mysqli_close($link);
                                     <td class="cell100 column4">Hospital Name</td>
                                     <td class="cell100 column5"><?php echo $hospital; ?></td>
                                 </tr>
+
+                                <tr class="row100 body">
+                                    <td class="cell100 column4">Capacity per Day</td>
+                                    <td class="cell100 column5"><button onclick="update_capacity();"><?php echo $capacity." "; ?><i class="fa fa-edit"></i></button></td>
+                                </tr>
                                 
 
                                 </tbody>
@@ -94,15 +100,16 @@ mysqli_close($link);
             </div> 
 
         
-            <div class="form-row" style="margin-left: 25%;">
+            <div class="form-row" style="margin-left: 20%;">
                 <div class="form-group">
                 <?php
-                    echo "<a class=\"check\" style=\"color: green;\" href=\"edit_admin.php\" onclick=\"return confirm('Are you sure to Edit?')\">Edit</a>";
+                    echo "<a style=\"color: green;\" href=\"edit_admin.php\" onclick=\"return confirm('Are you sure to Edit?')\">
+                    <div class=\"tile-3 clearfix\">Edit</div></a>";
                 ?>
                 </div>
                 <div class="form-group">
                 <?php
-                   echo "<a class=\"check\" style=\"color: red;\" href=\"../application/delete.php?nic=$nic\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\">Delete</a>"; 
+                   echo "<a style=\"color: red;\" href=\"../application/delete.php?nic=$nic\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\"><div class=\"tile-3 clearfix\" >Delete</div></a>"; 
                 ?>
                 </div>
             </div> 
@@ -111,5 +118,7 @@ mysqli_close($link);
         
         </div>
     </div>
+
+    
 
 <?php include '../../footer.php'; ?>

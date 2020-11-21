@@ -6,7 +6,7 @@ require('../header.php');
 <?php
 $bankid= $_SESSION["id-3"];
 $date= date("Y-m-d");
-$sql= "SELECT * FROM donor_reservation WHERE Dates>'$date' AND HosID='$bankid' AND Flag='0' ORDER BY Dates ASC";
+$sql= "SELECT * FROM donor_reservation WHERE Dates>'$date' AND HosID='$bankid' AND Flag!='2' ORDER BY Dates ASC";
 $result= mysqli_query($link, $sql);
 
  

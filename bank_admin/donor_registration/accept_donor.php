@@ -84,7 +84,17 @@ if (mysqli_num_rows($result) > 0) {
                     </div>
                     <div class="form-group <?php echo (!empty($volume_err)) ? 'has-error' : ''; ?>">
                         <label>Volume (ml)</label>
-                        <input type="text" name="volume">
+                        <select id="volume" name="volume" class="form-control">
+                                <option value=""></option>
+                                <option value="0">0 ml (blood problem)</option>
+                                <option value="50">50 ml (min)</option>
+                                <option value="100">100 ml</option>
+                                <option value="200">200 ml</option>
+                                <option value="250">250 ml</option>
+                                <option value="300">300 ml</option>
+                                <option value="400">400 ml</option>
+                                <option value="500">500 ml (max)</option>
+                            </select>  
                     </div>
                       
                 </div>

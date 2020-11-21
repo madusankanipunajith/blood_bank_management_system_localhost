@@ -3,7 +3,7 @@
     require '../header.php';
 
     // Define variables and initialize with empty values
-    $nic_old=$nic =$first_name = $last_name  = $dob = $mobile2 = $addline1 = $addline2 = $mobile = $district = $email="";
+    $select=$nic_old=$nic =$first_name = $last_name  = $dob = $mobile2 = $addline1 = $addline2 = $mobile = $district = $email="";
     $nic_err = $first_name_err = $last_name_err = $dob_err  = $addline_err  = $mobile_err = $district_err = $email_err="";
     $NIC=$firstname=$lastname=$addressline1=$addressline2="";
     
@@ -57,9 +57,7 @@
         if (isset($_GET['tel'])) {$mobile_err=$_GET['tel'];}
         if (isset($_GET['add'])) {$addline_err=$_GET['add'];}
         if (isset($_GET['dob'])) {$dob_err=$_GET['dob'];}
-    }
-
- mysqli_close($link);   
+    }   
 
 ?>
 <body>
@@ -122,34 +120,19 @@
                 <div class="form-row clearfix">
                     <div class="form-group <?php echo (!empty($district_err)) ? 'has-error' : ''; ?>">
                         <label>District</label>
-                        <select id="location" name="district" class="form-control">
-                                <option value="<?php echo $district;?>"><?php echo "$district";?></option>
-                                <option value="Ampara">Ampara</option>
-                                <option value="Anuradhapura">Anuradhapura</option>
-                                <option value="Badulla">Badulla</option>
-                                <option value="Batticaloa">Batticoloa</option>
-                                <option value="Colombo">Colombo</option>
-                                <option value="Galle">Galle</option>
-                                <option value="Gampaha">Gampaha</option>
-                                <option value="Hambantota">Hambantota</option>
-                                <option value="Jaffna">Jaffna</option>
-                                <option value="Kalutara">Kalutara</option>
-                                <option value="Kandy">Kandy</option>
-                                <option value="Kegalle">Kegalle</option>
-                                <option value="Kilinochchi">Kilinochchi</option>
-                                <option value="Kurunegala">Kurunegala</option>
-                                <option value="Mannar">Mannar</option>
-                                <option value="Matale">Matale</option>
-                                <option value="Matara">Matara</option>
-                                <option value="Monaragala">Monaragala</option>
-                                <option value="Mullativu">Mullativu</option>
-                                <option value="Nuwara Eliya">Nuwara Eliya</option>
-                                <option value="Polonnaruwa">Polonnaruwa</option>
-                                <option value="Puttalam">Puttalam</option>
-                                <option value="Ratnapura">Ratnapura</option>
-                                <option value="Trincomalee">Trincomalee</option>
-                                <option value="Vavniya">Vavniya</option>
-                            </select>
+                        <?php
+                                $sql="SELECT name FROM district";
+                                $result=mysqli_query($link, $sql);
+                                if(mysqli_num_rows($result)){
+                                    $select= '<select name="district" class="form-control">';
+                                    $select.="<option value=\"$district\">$district</option>";
+                                        while($rs=mysqli_fetch_array($result)){
+                                        $select.='<option value="'.$rs['name'].'">'.$rs['name'].'</option>';
+                                        }
+                                    }
+                                    $select.='</select>';
+                                    echo "$select";
+                        ?>
                     </div>
                     <div class="form-group <?php echo (!empty($mobile_err)) ? 'has-error' : ''; ?>">
                         <label>Telephone</label>
@@ -163,11 +146,16 @@
                     
                 </div>
 
-                <center><input type="submit"  name="Submit"></center>
+                <center>
+                 
+                     <input type="submit"  name="Submit">
+                   
                 <div>
-                    <a href="edit_password" style="color: #848484; font-size: 15px;">Edit Password</a>
+                    <a href="edit_password">
+                        <div class="tile-3">Edit Password</div>
+                    </a>
                 </div>
-
+                </center>
             </form>
           
 
@@ -175,5 +163,6 @@
 
                
         </div>
+<?php mysqli_close($link);?>        
     </div>
 <?php include '../../footer.php'; ?>

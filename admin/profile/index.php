@@ -18,73 +18,7 @@
         $email= $row["Email"];
     }
 
-    /*
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
-        // validate username
-        if(empty(trim($_POST["username"])))
-        {
-            $username_err="Please enter a user name";
-
-        }elseif(trim($_POST["username"])=="$nic"){
-            $username=trim($_POST["username"]);
-        }
-        else
-        {
-            //prepare statement
-            $sql2="SELECT UserName FROM super_admin WHERE UserName=?";
-            if($stmt=mysqli_prepare($link,$sql2))
-            {
-                mysqli_stmt_bind_param($stmt,"s",$param_username);
-                //set parameter
-                $param_username=trim($_POST["username"]);
-
-                //execute the prepare ststement
-                if(mysqli_stmt_execute($stmt))
-                {
-                    //store the result
-                    mysqli_stmt_store_result($stmt);
-                    //count no of rows
-                  
-                    if(mysqli_stmt_num_rows($stmt)==1)
-                    {
-                        $username_err="This user name is already taken";
-                    }
-                    else{
-                        $username=trim($_POST["username"]);
-                    }
-                }
-                else{
-                    echo "Something went wrong. Please try again later.";
-
-                }
-                //close the statement
-                mysqli_stmt_close($stmt);
-
-
-                
-            }
-        }
-
-        //validate email
-        if(empty(trim($_POST["email"])))
-        {
-            $email_err="Please enter the Email";
-        }
-        else{
-            $email=trim($_POST["email"]);
-        }
-
-        if (empty($username_err) && empty($email_err)) {
-            $sql3="UPDATE super_admin SET UserName='$username', Email='$email' WHERE UserName='$nic'";
-            if ($result=mysqli_query($link, $sql3)) {
-                $_SESSION["id-6"]=$username;
-                header("Location: index?user=ok");
-            }else{
-                echo "Cannot update plz check again";
-            }
-        }
-    }
-    */
+    
 
     mysqli_close($link);
 ?>
@@ -102,10 +36,10 @@
                 <div class="form-style-2-heading">Settings</div>
                 <?php
                     if (isset($_GET['password'])) {
-                        echo "<center><h5 style=\"color:green;\">Password Changed Succesfully !!!</h5></center>";
+                        echo "<center><p style=\"color:green;\">Password Changed Succesfully !!!</p></center>";
                     }
                     if (isset($_GET['user'])) {
-                        echo "<center><h5 style=\"color:green;\">User name is Changed Succesfully !!!</h5></center>";
+                        echo "<center><p style=\"color:green;\">User name is Changed Succesfully !!!</p></center>";
                     }
                     if (isset($_GET['users']) || isset($_GET['email'])) {
                         $email_err= $_GET['email'];

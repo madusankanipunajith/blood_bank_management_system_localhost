@@ -30,8 +30,8 @@ $result=mysqli_query($link, $sql);
                                 <th style="width: 30%;">Hospital Name</th>
                                 <th style="width: 15%">District</th>
                                 <th style="width: 20%">Total Volume (ml)</th>
-                                <th style="width: 15%">Like</th>
-                                <th style="width: 15%">Dislike</th>
+                                <th style="width: 15%"><i class="fa fa-thumbs-up"></i></th>
+                                <th style="width: 15%"><i class="fa fa-thumbs-down"></i></th>
                                 </tr>
                                 </thead>
                             </table>
@@ -64,9 +64,9 @@ $result=mysqli_query($link, $sql);
                             echo "<td style=\"line-height : 2.5;width: 15%;\">".$district."</td>";
                             echo "<td style=\"line-height : 2.5;width: 20%;\">".$sum_volume."</td>";
                                     if($class=='dislike'){$class="normal";}
-                            echo "<td style=\"line-height : 2.5;width: 15%;\"><a href=\"satisfaction?like=$hosid\" class=\"$class clearfix\">Like</a></td>";
+                            echo "<td style=\"line-height : 2.5;width: 15%;\"><a href=\"satisfaction?like=$hosid\" class=\"$class clearfix\"><i class=\"fa fa-thumbs-up\"></i></a></td>";
                                    if ($class=='normal') {$class="dislike"; } if($class=='like'){$class='normal';}
-                            echo "<td style=\"line-height : 2.5;width: 15%;\"><a href=\"satisfaction?dislike=$hosid\" class=\"$class clearfix\">Dislike</a></td><tr>";
+                            echo "<td style=\"line-height : 2.5;width: 15%;\"><a href=\"satisfaction?dislike=$hosid\" class=\"$class clearfix\"><i class=\"fa fa-thumbs-down\"></i></a></td><tr>";
                                 
                                 }
                             ?>

@@ -3,7 +3,7 @@
 
 	// Define variables and initialize with empty values
 $nic = $password = $confirm_password = $first_name = $last_name = $dob = $bgroup = $gender = $addline1 = $addline2 = $telephone = $district = $email = "";
-$nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_err = $dob_err = $bgroup_err = $gender_err = $addline1_err = $addline2_err = $telephone_err = $district_err = $email_err = "";
+$nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_err = $dob_err = $bgroup_err = $gender_err = $addline1_err = $addline2_err = $telephone_err = $telephone2_err = $district_err = $email_err = "";
  
 // Processing form data when form is submitted
 if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -32,7 +32,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 mysqli_stmt_store_result($stmt);
                 
                 if(mysqli_stmt_num_rows($stmt) == 1){
-                    $nic_err = "This username is already taken.";
+                    $nic_err = "This NIC is already taken.";
                 } else{
                     $temp = trim($_POST["nic"]);
                     $nic =  strtoupper($temp);
@@ -127,6 +127,11 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
 
     $telephone2 = trim($_POST["telephone-2"]);
+    if (!empty(trim($_POST["telephone-1"]))) {
+        if (strlen(trim($_POST["telephone-1"])) != 10) {
+            $telephone2_err= "telephone number must be 10 numbers";
+        }
+    }
     
     // Validate Email
     if(empty(trim($_POST["email"]))){
@@ -136,7 +141,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Check input errors before inserting in database
-    if(empty($nic_err) && empty($password_err) && empty($confirm_password_err) && empty($dob_err) && empty($gender_err) && empty($telephone_err) && empty($district_err) && empty($first_name_err) && empty($last_name_err) && empty($addline1_err) && empty($email_err)){
+    if(empty($nic_err) && empty($password_err) && empty($confirm_password_err) && empty($dob_err) && empty($gender_err) && empty($telephone_err) && empty($district_err) && empty($first_name_err) && empty($last_name_err) && empty($addline1_err) && empty($email_err) && empty($telephone2_err)){
         
         // Prepare an insert statement
         $sql = "INSERT INTO donor (nic, password, first_name, last_name, dob, bloodgroup, gender, district, addressline1, addressline2, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
@@ -168,7 +173,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             mysqli_stmt_close($stmt);
         }
     }else{
-    	header("Location: ../register.php?nic=$nic_err&first=$first_name_err&last=$last_name_err&dob=$dob_err&dis=$district_err&add=$addline1_err&tel=$telephone_err&email=$email_err&pass=$password_err&conf=$confirm_password_err");
+    	header("Location: ../register.php?nic=$nic_err&first=$first_name_err&last=$last_name_err&dob=$dob_err&dis=$district_err&add=$addline1_err&tel=$telephone_err&email=$email_err&pass=$password_err&conf=$confirm_password_err&tel2=$telephone2_err");
     }
     
     // Close connection

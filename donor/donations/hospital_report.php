@@ -27,7 +27,7 @@ mysqli_close($link);
 	?>
 	<div class="main">
 		<div class="topic">
-          <div class="form-style-2-heading">Selected Hospital Donations	(<?php echo "<a href=\"hospital_donations\" style=\"color:blue;\">Back</a>"?>)</div>
+          <div class="form-style-2-heading">Selected Hospital Donations	(<?php echo "<a href=\"hospital_donations\" style=\"color:gray;\">Back</a>"?>)</div>
         </div>		
         <div class="container-table200">
                 <div style="width: 100%">

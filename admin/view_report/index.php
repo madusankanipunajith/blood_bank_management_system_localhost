@@ -16,13 +16,16 @@
                     <div class="content">
 
                         <div class="tile">
-                             <li><a href="#" >Hospital Reports</a></li>
+                             <li><a href="hospital_report" >Hospital Reports</a></li>
                          </div>
                         <div class="tile">
-                            <li><a href="#">Donor Reports</a></li>
+                            <li><a href="districts">Donor Reports</a></li>
                         </div>
                         <div class="tile">
-                             <li><a href="#">Blood Stock Reports</a></li>
+                            <li><a href="requester_report">Requester Reports</a></li>
+                        </div>
+                        <div class="tile">
+                             <li><a href="hospitals">Blood Stock Reports</a></li>
                         </div>
 
                     </div>

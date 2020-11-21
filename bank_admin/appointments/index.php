@@ -7,7 +7,7 @@ require('../header.php');
 $bankid= $_SESSION["id-3"];
 //date_default_timezone_set("Asia/Colombo");
 $date= date("Y-m-d");
-$sql= "SELECT * FROM donor_reservation WHERE Dates='$date' AND HosID='$bankid' AND Flag='0' ORDER BY Tme ASC";
+$sql= "SELECT * FROM donor_reservation WHERE Dates='$date' AND HosID='$bankid' AND Flag='1' ORDER BY Tme ASC";
 $result= mysqli_query($link, $sql);
 
  
@@ -41,8 +41,7 @@ $result= mysqli_query($link, $sql);
                               <th class="cell100 column6">Gender</th> 
                              <th class="cell100 column6">District</th> 
                              <th class="cell100 column6">Date</th>
-                             <th class="cell100 column6">Time</th>
-                             <th class="cell100 column9">Appove</th>     
+                             <th class="cell100 column6">Time</th>  
                             </tr>
                             </thead>
                         </table>
@@ -72,7 +71,7 @@ $result= mysqli_query($link, $sql);
                                 echo "<td class='cell100 column6'>".$district."</td>";
                                 echo "<td class='cell100 column6'>".$date."</td>";
                                 echo "<td class='cell100 column6'>".$time."</td>";
-                                echo "<td class='cell100 column9'><a href=\"approve?id=$id\" onclick=\"return confirm('confirm');\">Approve</a></td></tr>";
+
                             }
                                 
                             ?>
