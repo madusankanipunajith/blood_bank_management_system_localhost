@@ -47,8 +47,9 @@ mysqli_close($link);
                                                 while($row = mysqli_fetch_assoc($result)) {
                                                     $type = $row["Type"];
                                                     $volume = $row["Volume"];
+                                                    $id= $row["BloodId"];
                                                     
-                                                    echo "<tr class='row100 body'><td class='cell100 column1'>".$type."</td>";
+                                                    echo "<tr class='row100 body'><td class='cell100 column1'><a href=\"packet_list?$id\">".'b'.$type.'</b>'."</a></td>";
                                                     echo "<td class='cell100 column2'>".$volume."</td></tr>";
                                                     
                                                 }
