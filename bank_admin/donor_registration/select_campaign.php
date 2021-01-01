@@ -57,7 +57,7 @@ mysqli_close($link);
                                 echo "<tr class='row100 body'><td style=\" line-height : 2.5;width: 35%;\">".$name."</td>";
                                 echo "<td style=\"line-height : 2.5;width: 25%;\">".$location."</td>";
                                 echo "<td style=\"line-height : 2.5;width: 25%;\">".$date."</td>";
-                                echo "<td style=\"line-height : 2.5;width: 15%;\"><a href=\"getuser?campid=$id\" style=\"color:blue;\">Choose</a></td></tr>";
+                                echo "<td style=\"line-height : 2.5;width: 15%;\"><a href=\"getuser?campid=$id\" style=\"color:blue;\"><i class=\"fa fa-info-circle\"></i></a></td></tr>";
                                 
                                 }
                                 

@@ -42,7 +42,7 @@ $old_err=$new_err=$confirm_err="";
         }
         elseif(strlen(trim($_POST["new"])) < 6)
         {
-            $new_err="Please enter valid password";
+            $new_err="Password must have at least 6 characters";
         }
         else{
             $new=trim($_POST["new"]);

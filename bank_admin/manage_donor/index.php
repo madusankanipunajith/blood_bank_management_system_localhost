@@ -32,36 +32,38 @@ mysqli_close($link);
             <div class="topic">
                 <div class="form-style-2-heading">Manage Donor</div>
             </div>
-            <div class="tile-container">
+            <div class="tile-container-2">
                 <div class="tile-row">
-                    <a href="#">
+                    <a href="registered_donors">
                         <div class="tile-2">
                             <h2><b>Registered Donors</b></h2>
                             <center><p><b><?php echo "$count";?></b></p></center>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                            <p>Registered donors of your hospital</p>
                         </div>
                     </a>
-                    <a href="#">
+                    
                     <div class="tile-2">
+                        <a href="#">
                         <h2><b>Donor Satisfaction</b></h2>
                         <center><p>Like<b><?php echo " "."$good"." "."%";?></b>&emsp;Dislike<b><?php echo " "."$bad"." "."%";?></b></p></center>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                        <p>This is an indicator that you can get a brief idea about how do donors think on your hospital.</p>
+                        </a>
                     </div>
-                    </a>
+                    
                 </div>
                 <div class="tile-row">
-                    <a href="#">
+                    <a href="valid_donors">
                     <div class="tile-2">
                         <h2><b>Verified Donors</b></h2>
                         <center><p><b><?php echo "$count2";?></b></p></center>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                        <p>This is the count of validate donors in your hospital</p>
                     </div>
                     </a>
-                    <a href="#">
+                    <a href="invalid_donors">
                     <div class="tile-2">
                         <h2><b>Rejected Donors</b></h2>
                        <center><p><b><?php echo "$count3";?></b></p></center>
-                       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
+                       <p>This is the count of Invalid donors in your hospital due to some reasons.</p>
                     </div>
                     </a>
                 </div>

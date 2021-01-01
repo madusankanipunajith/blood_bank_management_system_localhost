@@ -103,13 +103,13 @@ mysqli_close($link);
             <div class="form-row" style="margin-left: 20%;">
                 <div class="form-group">
                 <?php
-                    echo "<a style=\"color: green;\" href=\"edit_admin.php\" onclick=\"return confirm('Are you sure to Edit?')\">
-                    <div class=\"tile-3 clearfix\">Edit</div></a>";
+                    echo "<a href=\"edit_admin.php\" onclick=\"return confirm('Are you sure to Edit?')\">
+                    <button class=\"btn-edit\">Edit</button></a>";
                 ?>
                 </div>
                 <div class="form-group">
                 <?php
-                   echo "<a style=\"color: red;\" href=\"../application/delete.php?nic=$nic\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\"><div class=\"tile-3 clearfix\" >Delete</div></a>"; 
+                   echo "<a href=\"../application/delete.php?nic=$nic\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\"><button class=\"btn-delete\" >Delete</button></a>"; 
                 ?>
                 </div>
             </div> 

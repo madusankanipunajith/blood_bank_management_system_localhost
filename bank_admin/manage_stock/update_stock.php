@@ -45,10 +45,10 @@ if($_SERVER['REQUEST_METHOD']=="GET"){
                     </div>
         			<div class="form-group  <?php echo (!empty($volume_err)) ? 'has-error' : ''; ?>">
                         <label>New Volume</label>
-                        <input type="text" name="volume" class="form-control">
+                        <input type="number" name="volume" class="form-control">
                         <span class="help-block" style="font-size: 20px;"><?php echo $volume_err; ?></span>
                     </div>
-					<center><input type="submit" name="hospital" value="Update"></center>
+					<center><input class="button btn-edit" type="submit" name="hospital" value="Update"></center>
 				</form>
                 
             </center>

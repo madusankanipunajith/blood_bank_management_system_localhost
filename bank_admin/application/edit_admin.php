@@ -1,5 +1,7 @@
 <?php
 	require_once "../session.php";
+    include 'nic_validator.php';
+
 	$email_err=$nic_err=$firstname_err=$lastname_err="";
 	$email=$firstname=$lastname=$nic="";
 
@@ -14,6 +16,8 @@
 
         }elseif(trim($_POST["nic"])=="$nic"){
             $nic=trim($_POST["nic"]);
+        }elseif (!is_valid_nic($_POST['nic'])) {
+             $nic_err = "Your NIC is not Valid.";
         }
         else
         {

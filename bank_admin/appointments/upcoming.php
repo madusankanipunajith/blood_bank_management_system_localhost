@@ -6,7 +6,7 @@ require('../header.php');
 <?php
 $bankid= $_SESSION["id-3"];
 $date= date("Y-m-d");
-$sql= "SELECT * FROM donor_reservation WHERE Dates>'$date' AND HosID='$bankid' AND Flag!='2' ORDER BY Dates ASC";
+$sql= "SELECT * FROM donor_reservation WHERE Dates>'$date' AND HosID='$bankid' AND Flag='1'  ORDER BY Dates ASC";
 $result= mysqli_query($link, $sql);
 
  
@@ -20,7 +20,7 @@ $result= mysqli_query($link, $sql);
 
         <div class="main">
             <div class="topic">
-                <div class="form-style-2-heading"><a href="index">Upcomming Appointments</a></div>
+                <div class="form-style-2-heading"><div align="center"><a href="index">Upcomming Appointmets</a></div><?php echo"<input class=\"search\" type=\"text\" id=\"search\" placeholder=\"Search bar\">";?></div>
             </div>
             <div class="container-table100">
                     <div style="width: 100%">
@@ -42,7 +42,8 @@ $result= mysqli_query($link, $sql);
                     <div class="table100-body">
                         <table>
                             <?php
-                                // output data of each row
+                                if (mysqli_num_rows($result)>0) {
+                                    // output data of each row
                                 while($row = mysqli_fetch_assoc($result)) {
                                     
                                     $id = $row["DonorID"];
@@ -65,6 +66,9 @@ $result= mysqli_query($link, $sql);
                                 echo "<td class='cell100 column6'>".$date."</td>";
                                 echo "<td class='cell100 column6'>".$time."</td></tr>";
                             }
+                                }else{
+                                     echo "<center><p>No updates available</p></center>";
+                                }
                                 
                             ?>
                         
@@ -72,7 +76,7 @@ $result= mysqli_query($link, $sql);
                     </div>
                         </div>
                     </div>
-                    <center><a href="index" style="color: #585858; font-size: 15px;">Today Appointment</a></center>
+                    <center><a href="index1" style="color: #585858; font-size: 15px;"><i class="fa fa-backward"></i>Today Appointment</a></center>
                 </div>
             
         </div>
@@ -81,4 +85,5 @@ $result= mysqli_query($link, $sql);
 // Close connection
 mysqli_close($link);
 ?>
+</div>
 <?php include '../../footer.php'; ?>

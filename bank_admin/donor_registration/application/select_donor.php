@@ -1,8 +1,16 @@
 <?php
+    session_start();
 	require '../../../config.php';
-	$nic_err=$nic="";
+    $date= date("Y-m-d");
+    putenv("TZ=Asia/Colombo");
+    $t=time();$time=date('H:i:sa',$t);
+    $place= $_SESSION['place'];
+    $hosid= $_SESSION['id-3'];
+    $campid=$_SESSION['id'];
+
+	$nic_err=$bgroup_err=$donation_err=$nic=$donation_number=$bgroup="";
 	if($_SERVER["REQUEST_METHOD"] == "POST"){
-        if(!empty(trim($_POST['nic']))){
+        if(!empty(trim($_POST['nic'])) && !empty(trim($_POST['d_num'])) && !empty($_POST['bgroup'])){
 
             
             $sql= "SELECT nic FROM donor WHERE nic=?";
@@ -25,8 +33,17 @@
                         $nic_err="no account found";
                     }
                     else{
-                        $nic=trim($_POST["nic"]);
-                        header("location: ../accept_donor?nic=$nic");
+                    $nic=trim($_POST["nic"]);$donation_number=strtoupper(trim($_POST["d_num"]));$bgroup=trim($_POST["bgroup"]);
+                    if ($place=='hospital') {
+                        $sql2= "INSERT INTO donate_hospital (DonationNumber,HospitalID, DonorID, Dates, Tme) VALUES ('$donation_number','$hosid','$nic','$date','$time')";
+                        $sql3="UPDATE donor SET bloodgroup='$bgroup' WHERE nic='$nic'";
+                            mysqli_query($link, $sql2);mysqli_query($link, $sql3);
+                        }else{
+                        $sql2= "INSERT INTO donate_campaign (DonationNumber,CampID,HospitalID, DonorID, Dates) VALUES ('$donation_number','$id','$hosid','$nic','$date')";
+                            mysqli_query($link, $sql2);    
+                        }
+                        
+                        header("location: ../accept_donor?nic=$nic&donation_number=$donation_number");
                     }
                 }
                 else{
@@ -39,11 +56,19 @@
             }
 
         }else{
-            $nic_err="enter nic";
+            if (empty(trim($_POST['nic']))) {
+                $nic_err="enter nic";
+            }
+            if (empty(trim($_POST['d_num']))) {
+                $donation_err="enter donation number";
+            }
+            if (empty(trim($_POST['bgroup']))) {
+                $bgroup_err="enter the blood group";
+            }
         }
 
-        if (!empty($nic_err)) {
-        	header("Location: ../select_donor?err=$nic_err");
+        if (!empty($nic_err) || !empty($donation_err) || !empty($bgroup_err) ) {
+        	header("Location: ../select_donor?nic=$nic_err&donation=$donation_err&bgroup=$bgroup_err");
         }
 
     }else{
