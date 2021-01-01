@@ -55,20 +55,20 @@
                 <form action="application/index.php" method="post">
                 
                     <div class="form-row">
-                        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?>">
+                        <div class="form-group <?php echo (!empty($username_err)) ? 'has-error' : ''; ?> tooltip">
                             <label>User Name</label>
-                            <input type="text" name="username" value="<?php echo $nic;?>">
-                            <span style="font-size: 15px;"><?php echo $username_err; ?></span>
+                            <input type="text" name="username" value="<?php echo $nic;?>" required>
+                             <span class="tooltiptext tooltip_font"><?php echo $username_err;?></span>
                         </div>
-                        <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
+                        <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?> tooltip">
                             <label>Email</label>
-                            <input type="email" name="email" value="<?php echo $email;?>">
-                            <span style="font-size: 15px;"><?php echo $email_err; ?></span>
+                            <input type="email" name="email" value="<?php echo $email;?>" required>
+                             <span class="tooltiptext tooltip_font"><?php echo $email_err;?></span>
                         </div>
 
                     </div>
                 
-                <input type="submit" name="change_nic" value="Change">
+                <input class="button btn-delete" type="submit" name="change_nic" value="Change">
                 </form>
             </center>
 
@@ -78,27 +78,30 @@
             <center>
             <form action="application/edit_password.php" method="post">
                 
-                    <div class="form-group <?php echo (!empty($old_err)) ? 'has-error' : ''; ?>">
-                        <label>Old Password</label>
-                        <input type="password" name="old" >
+                    <div class="form-group <?php echo (!empty($old_err)) ? 'has-error' : ''; ?> tooltip">
+                        <label>Old Password<span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></label>
+                        <input type="password" name="old" value="<?php if(empty($old_err) && !empty($confirm_err)){echo $_SESSION['pwd'];}?>"id="pass_log_id" required>
+                        <span class="tooltiptext tooltip_font"><?php echo $old_err;?></span>
                     </div>
                 
                 <div class="form-row" style="width: 70%;">
-                    <div class="form-group <?php echo (!empty($new_err)) ? 'has-error' : ''; ?>">
-                        <label>New Password</label>
-                        <input type="password" name="new" >
+                    <div class="form-group <?php echo (!empty($new_err)) ? 'has-error' : ''; ?> tooltip">
+                        <label>New Password <span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></label>
+                        <input type="password" name="new" id="pass_log_id" required>
+                         <span class="tooltiptext tooltip_font"><?php echo $new_err;?></span>
                     </div>
-                    <div class="form-group <?php echo (!empty($confirm_err)) ? 'has-error' : ''; ?>">
-                        <label>Confirm Password</label>
-                        <input type="password" name="confirm">
+                    <div class="form-group <?php echo (!empty($confirm_err)) ? 'has-error' : ''; ?> tooltip">
+                        <label>Confirm Password<span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></label>
+                        <input type="password" name="confirm" id="pass_log_id" required>
+                         <span class="tooltiptext tooltip_font"><?php echo $confirm_err;?></span>
                     </div>
                 </div>
                 
-                <input type="submit" name="change_pwd" value="Change">
+                <input class="button btn-delete" type="submit" name="change_pwd" value="Change">
             </form>
             </center>
             
         </div>
     </div>
 
-</body>
+<?php include '../../footer.php'; ?>

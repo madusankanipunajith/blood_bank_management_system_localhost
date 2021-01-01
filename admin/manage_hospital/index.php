@@ -21,12 +21,18 @@
             ?>
                 <form action="" method="post">
                     <div class="content">
-                        <div class="tile">
-                            <li><a href="new_hospital">Add New Hospitals</a></li>
+                        <div class="tile-container">
+                            <a href="new_hospital">
+                                <div class="tile">
+                                    <li>Add New Hospitals</li>
+                                </div>
+                            </a>
+                            <a href="select_hospital">    
+                                <div class="tile">
+                                <li>Delete Hospital</li>
+                            </a>    
                         </div>
-                        <div class="tile">
-                            <li><a href="select_hospital">Delete Hospital </a></li>
-                        </div>
+                    </div>
 
                     </div>
                 </form>
@@ -34,5 +40,4 @@
         </div>
     </div>
 
-</body>
-</html>
+<?php include '../../footer.php'; ?>
