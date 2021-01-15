@@ -146,7 +146,7 @@
                     }else{echo "Telephone1 errors";}
                     
                     // Redirect to login page
-                    header("location: ../../test_login.php?reg=ok");
+                    header("location: ../../reg_login.php?reg=ok");
                 }
                 else{
                     echo "Something went wrong, please try again later";

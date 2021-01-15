@@ -47,7 +47,8 @@ mysqli_close($link);
                     
                     </form>
                 <center>
-                    <br><a class="has-error" href="<?php echo "application/delete_hospital?delid=$id";?>" onclick="return confirm('Are You sure?');" >Delete</a>
+                    <br><a href="<?php echo "application/delete_hospital?delid=$id";?>" onclick="return confirm('Are You sure?');" >
+                        <div class="tile-3">Delete</div></a>
                 </center>    
                     
                     

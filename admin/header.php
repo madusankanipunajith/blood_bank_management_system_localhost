@@ -2,8 +2,10 @@
 <html>
 <head>
 	<title>System Admin</title>
-    <script type="text/javascript" src="localhost/bloodbank/js/script.js"></script>
-	<link rel="stylesheet" type="text/css" href="localhost/bloodbank/css/style.css">
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+	<script type="text/javascript" src="/bloodbank/js/script.js"></script>
+	<link rel="stylesheet" type="text/css" href="/bloodbank/css/style.css">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 	<style>
 	    .tile-info-row{
@@ -59,12 +61,12 @@
 				</div>
 				<div class="top-bar-links">
 					<ul>
-						<li><a href="localhost/bloodbank/index.php">Home</a></li>
+						<li><a href="/bloodbank/index.php">Home</a></li>
 						<li><a href="https://www.findhealthclinics.com/LK/Narahenpita/125648274159498/National-Blood-Transfusion-Service---Sri-Lanka">About Us</a></li>
 						<li><a href="#">Donates</a></li>
 						<li><a href="#">Campaigns</a></li>
 						
-						<li><a href="localhost/bloodbank/admin/logout.php">Log Out</a></li>
+						<li><a href="/bloodbank/admin/logout.php">Log Out</a></li>
 					</ul>
 				</div>	<!--top-bar-links-->
 				
