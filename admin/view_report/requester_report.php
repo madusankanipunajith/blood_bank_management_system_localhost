@@ -10,7 +10,7 @@ $count= array();
 $i=0;
 while ($i<=8) {
 	$prov= $province[$i];
-	$sql="SELECT Province, COUNT(NIC) AS count FROM Requestor WHERE Province='$prov'";
+	$sql="SELECT Province, COUNT(NIC) AS count FROM requestor WHERE Province='$prov'";
 	$result= mysqli_query($link, $sql);
 	while ($row=mysqli_fetch_assoc($result)) {$count[$i]=$row["count"];}
 	$i++;
@@ -41,4 +41,4 @@ mysqli_close($link);
 
 
 
-</body>
+<?php include '../../footer.php'; ?>

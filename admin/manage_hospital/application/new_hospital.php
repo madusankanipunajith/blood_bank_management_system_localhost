@@ -2,7 +2,7 @@
     require '../../session.php';
     // Define variables and initialize with empty values
     $hosid=$name = $address= $telephone = $district = $capacity="";
-    $name_err = $address_err = $telephone_err = $district_err = $capacity_err=""; 
+    $name_err = $address_err = $telephone_err = $telephone2_err = $district_err = $capacity_err=""; 
  
     // Processing form data when form is submitted
     if($_SERVER["REQUEST_METHOD"] == "POST"){
@@ -31,7 +31,7 @@
                     $name_err = "This hospital name is already taken.";
                 } else{
                     $temp = trim($_POST["name"]);
-                    $name =  ucfirst($temp);
+                    $name =  ucwords($temp);
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -73,6 +73,11 @@
     }
 
     $telephone2 = trim($_POST["tel-2"]);
+    if (!empty(trim($_POST["tel-2"]))) {
+        if (strlen(trim($_POST["tel-2"])) != 10) {
+            $telephone2_err= "telephone number must be 10 numbers";
+        }
+    }
     //isempty($name_err) && isempty($district_err) && isempty($address_err) && isempty($telephone_err)
 
     if (empty($name_err) && empty($district_err) && empty($address_err) && empty($telephone_err) && empty($capacity_err)) {
@@ -117,7 +122,7 @@
             mysqli_stmt_close($stmt);
         }
     }else{
-        header("Location: ../new_hospital?name=$name_err&add=$address_err&dis=$district_err&tel=$telephone_err&cap=$capacity_err");
+        header("Location: ../new_hospital?name=$name_err&add=$address_err&dis=$district_err&tel=$telephone_err&tel2=$telephone2_err&cap=$capacity_err&fname=$name&fdis=$district&fadd=$address&fcap=$capacity&ftel1=$telephone&ftel2=$telephone2");
     }
 
 

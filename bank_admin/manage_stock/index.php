@@ -15,15 +15,13 @@ mysqli_close($link);
 
 
 <body>
-    <?php if (isset($_GET['update'])) { echo "<center><p style=\"color:green; margin-bottom:0px;\">Updated Successfully !!!</p></center>";} ?>
-
 	<div class="container-row admin">
         <?php
         require_once '../dashboard.php';
         ?>
 
         <div class="main">
-            
+             <?php if (isset($_GET['update'])) { echo "<center><p style=\"color:green; margin-bottom:0px;\">Updated Successfully !!!</p></center>";} ?>
             <center><h2><a href="index">Your Hospital's Blood Stock Details</a></h2></center>   
             <div class="limiter">
 		        <div class="container-table100">
@@ -49,8 +47,9 @@ mysqli_close($link);
                                                 while($row = mysqli_fetch_assoc($result)) {
                                                     $type = $row["Type"];
                                                     $volume = $row["Volume"];
+                                                    $id= $row["BloodId"];
                                                     
-                                                    echo "<tr class='row100 body'><td class='cell100 column1'>".$type."</td>";
+                                                    echo "<tr class='row100 body'><td class='cell100 column1'><a href=\"packet_list?$id\">".'b'.$type.'</b>'."</a></td>";
                                                     echo "<td class='cell100 column2'>".$volume."</td></tr>";
                                                     
                                                 }
@@ -61,10 +60,12 @@ mysqli_close($link);
         							</tbody>
         						</table>
         					</div>
+
         			    </div>
+                        <center><a href="update_stock.php"><button style = "width: 200px;">Update Blood Stocks</button></a></center>
 			        </div>
 		        </div>
-		        <a href="update_stock.php" style = "float: right; margin-right: 5%;"><button>Update Blood Stocks</button></a>
+		        
 		        
             </div>
             

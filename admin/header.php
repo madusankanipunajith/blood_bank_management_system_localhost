@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>System Admin</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 	<script type="text/javascript" src="/bloodbank/js/script.js"></script>
@@ -57,16 +58,15 @@
 </head>
 <body>
 		<div class="top-bar clearfix">
-				<div class="logo">
-				</div>
+		<a href="/bloodbank/index"><div class="logo">
+        </div></a>
 				<div class="top-bar-links">
 					<ul>
-						<li><a href="/bloodbank/index.php">Home</a></li>
-						<li><a href="https://www.findhealthclinics.com/LK/Narahenpita/125648274159498/National-Blood-Transfusion-Service---Sri-Lanka">About Us</a></li>
-						<li><a href="#">Donates</a></li>
-						<li><a href="#">Campaigns</a></li>
+						<li><a href="/bloodbank/index.php"><i class="fa fa-home"></i>Home</a></li>
+						<li><a href="#"><i class="fa fa-mobile"></i>Contact Banks</a></li>
+						<li><a href="#"><i class="fa fa-bed"></i>Campaigns</a></li>
 						
-						<li><a href="/bloodbank/admin/logout.php">Log Out</a></li>
+						<li><a href="/bloodbank/admin/logout.php"><i class="fa fa-sign-out"></i>Log Out</a></li>
 					</ul>
 				</div>	<!--top-bar-links-->
 				

@@ -11,23 +11,32 @@
 
         <div class="main">
             <div class="topic">
-            <div class="form-style-2-heading">View Report</div><br>
+            <div class="form-style-2-heading">View Report</div>
                 <form action="" method="post">
                     <div class="content">
+                        <div class="tile-container">
 
-                        <div class="tile">
-                             <li><a href="hospital_report" >Hospital Reports</a></li>
-                         </div>
-                        <div class="tile">
-                            <li><a href="districts">Donor Reports</a></li>
+                        <a href="hospital_report" >
+                            <div class="tile">
+                                <li>Hospital Reports</li>
+                            </div>
+                        </a>
+                        <a href="districts"> 
+                            <div class="tile">
+                                <li>Donor Reports</li>
+                            </div>
+                        </a>
+                        <a href="requester_report">
+                            <div class="tile">
+                                <li>Requester Reports</li>
+                            </div>
+                        </a>
+                        <a href="hospitals">
+                            <div class="tile">
+                                <li>Blood Stock Reports</li>
+                            </div>
+                        </a>
                         </div>
-                        <div class="tile">
-                            <li><a href="requester_report">Requester Reports</a></li>
-                        </div>
-                        <div class="tile">
-                             <li><a href="hospitals">Blood Stock Reports</a></li>
-                        </div>
-
                     </div>
                 </form>
             </div>
@@ -35,5 +44,4 @@
         </div>
     </div>
 
-</body>
-</html>
+<?php include '../../footer.php'; ?>

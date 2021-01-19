@@ -43,4 +43,4 @@ mysqli_close($link);
 
 
 
-</body>
+<?php include '../../footer.php'; ?>

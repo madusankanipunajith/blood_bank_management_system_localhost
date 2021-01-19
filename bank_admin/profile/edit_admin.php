@@ -50,38 +50,41 @@ $email=$firstname=$lastname=$nic="";
                 
                     <div class="form-group <?php echo (!empty($firstname_err)) ? 'has-error' : ''; ?>">
                         <label>First Name</label>
-                        <input type="text" name="firstname" class="form-control" value="<?php echo $firstname; ?>">
-                        <span class="help-block" style="font-size: 15px;"><?php echo $firstname_err; ?></span>
+                        <input type="text" name="firstname" class="form-control" value="<?php echo $firstname; ?>" required>
+                        <span class="help-block"><?php echo $firstname_err; ?></span>
                     </div>
                 
                
                     <div class="form-group <?php echo (!empty($lastname_err)) ? 'has-error' : ''; ?>">
                         <label>Last Name</label>
-                        <input type="text" name="lastname" class="form-control" value="<?php echo $lastname; ?>">
-                        <span class="help-block" style="font-size: 15px;"><?php echo $lastname_err; ?></span>
+                        <input type="text" name="lastname" class="form-control" value="<?php echo $lastname; ?>" required>
+                        <span class="help-block" ><?php echo $lastname_err; ?></span>
                     </div>
                 
         
                 
                     <div class="form-group <?php echo (!empty($nic_err)) ? 'has-error' : ''; ?>">
                         <label>NIC</label>
-                        <input type="text" name="nic" value="<?php echo $nic; ?>">  
-                        <span class="help-block" style="font-size: 15px;"><?php echo $nic_err; ?></span>   
+                        <input type="text" name="nic" value="<?php echo $nic; ?>" required>  
+                        <span class="help-block" ><?php echo $nic_err; ?></span>   
                     </div>
                     <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
                         <label>Email</label>
-                        <input type="email" name="email" value="<?php echo $email; ?>">  
-                        <span class="help-block" style="font-size: 15px;"><?php echo $email_err; ?></span>   
+                        <input type="email" name="email" value="<?php echo $email; ?>" required>  
+                        <span class="help-block" ><?php echo $email_err; ?></span>   
                     </div>
                   
                 
                 
-            <input type="submit"  name="Submit">
-            <div style="margin-top: : -50px; ">
-                <a href="edit_password" style="color: #848484; font-size: 15px;">Edit Password</a>
+            <input type="submit"  name="Submit" class="button btn-edit">
+            <div class="form-group">
+                
+                    <a href="edit_password"><div class="button">Edit Password</div></a>
+                
+                
             </div>
-
             </form>
+            <div style="float: right;font-size: 15px; margin-top: -30px;"><a href="edit_hospital"><i class="fa fa-cogs"></i>Edit Hospital</a></div>
             </center>
           
            </div> 

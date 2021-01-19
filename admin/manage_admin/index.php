@@ -29,14 +29,22 @@
             ?>
                 <form action="" method="post">
                     <div class="content">
-                        <div class="tile">
-                             <li><a href="new_admin" >Add New Admin</a></li>
-                         </div>
-                        <div class="tile">
-                            <li><a href="select_admin?update=yes">Update Admin</a></li>
-                        </div>
-                        <div class="tile">
-                            <li><a href="select_admin?delete=yes">Delete Admin</a></li>
+                        <div class="tile-container">
+                            <a href="new_admin" >
+                                <div class="tile">
+                                    <li>Add New Admin</li>
+                                </div>
+                            </a>
+                            <a href="select_admin?update=yes">
+                                <div class="tile">
+                                    <li>Update Admin</li>
+                                </div>
+                            </a>
+                            <a href="select_admin?delete=yes">
+                                <div class="tile">
+                                    <li>Delete Admin</li>
+                                </div>
+                            </a>
                         </div>
 
                     </div>
@@ -47,5 +55,4 @@
         </div>
     </div>
 
-</body>
-</html>
+<?php include '../../footer.php'; ?>

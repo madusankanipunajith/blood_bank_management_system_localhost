@@ -22,25 +22,25 @@
 		<center>
 			<form action="../application/edit_password.php" method="post">
 				<div class="form-group <?php echo (!empty($old_err)) ? 'has-error' : ''; ?>">
-					<label>OLD PASSWORD</label>
-                    <input type="password" name="old" class="form-control">
+					<label>Old Password<span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></label>
+                    <input type="password" id="pass_log_id" name="old" class="form-control" value="<?php if(empty($old_err) && !empty($confirm_err)){echo $_SESSION['pwd'];}?>" required>
                     <span class="help-block" style="font-size: 15px;"><?php echo $old_err; ?></span>
 				</div>
 				<div class="form-group <?php echo (!empty($new_err)) ? 'has-error' : ''; ?>">
-					<label>NEW PASSWORD</label>
-                    <input type="password" name="new" class="form-control">
+					<label>New Password<span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></label>
+                    <input type="password" id="pass_log_id" name="new" class="form-control" required>
                     <span class="help-block "style="font-size: 15px;"><?php echo $new_err; ?></span>
 				</div>
 				<div class="form-group <?php echo (!empty($confirm_err)) ? 'has-error' : ''; ?>">
-					<label>CONFIRM PASSWORD</label>
-                    <input type="password" name="confirm" class="form-control">
+					<label>Confirm Password<span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></label>
+                    <input type="password" id="pass_log_id" name="confirm" class="form-control" required>
                     <span class="help-block "style="font-size: 15px;"><?php echo $confirm_err; ?></span>
 				</div>
 
-				<input type="submit" name="Submit">
-				<div style="margin-top: : -50px; ">
-                <a href="edit_admin" style="color: #848484; font-size: 15px;">Cancel</a>
-            </div>
+				<input type="submit" name="Submit" class="button btn-edit">
+				<div class="form-group">
+                <a href="edit_admin"><div class="button">Cancel</div></a>
+            	</div>
 			</form>
 		</center>
 		</div>

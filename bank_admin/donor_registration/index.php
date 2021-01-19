@@ -11,22 +11,38 @@
         ?>
         <div class="main">
             <div class="topic">
-                <div class="form-style-2-heading">SELECT HOSPITAL / CAMPAIGN</div>
+                <div class="form-style-2-heading">Blood Packet Management</div>
             </div>
 
-            <h2 class="center">Choose donor's Donation Place Here</h2>
+            
             <center>
-                <div class="tile-container">
-                    <a href="select_donor?hospital">
-                        <div class="tile">
-                            <p class="title">Blood Bank Hospital</p>
+            <div class="tile-container">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <a href="select_place">
+                                <div class="tile">
+                                <p class="title"><i class="fa fa-plus"></i>Add Blood Packets</p>
+                                </div>
+                            </a>
                         </div>
-                    </a><br>
-                    <a href="select_campaign">
-                    <div class="tile">
-                        <p class="title">Organization's Campaign</p>
+                        <div class="form-group">
+                            <a href="select_number">
+                                <div class="tile">
+                                <p class="title"><i class="fa fa-paperclip"></i>Requested Packets</p>
+                                </div>
+                            </a>
+                        </div>
+
                     </div>
-                    </a>
+                    <a href="insert_number">
+                    <div class="tile">
+                        <p class="title"><i class="fa fa-certificate"></i>Validate Blood Packets</p>
+                    </div>
+                    </a><br>
+                    <a href="select_patient">
+                    <div class="tile">
+                        <p class="title"><i class="fa fa-share"></i>Transfusion Blood Packets</p>
+                    </div>
                     
             </div>
             </center>

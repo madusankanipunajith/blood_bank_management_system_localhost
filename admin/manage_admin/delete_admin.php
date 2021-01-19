@@ -58,7 +58,10 @@ mysqli_close($link);
                     
                     </form>
                 <center>
-                    <br><a class="has-error" href="<?php echo "application/delete_admin?delnic=$nic";?>" onclick="return confirm('Are you Sure ?');" >Delete</a>
+                    <br>
+                       <div class="form-group"> <a href="<?php echo "application/delete_admin?delnic=$nic&hosid=$hosid";?>" onclick="return confirm('Are you Sure ?');" ><div class="button btn-delete clearfix">Delete</div></div>
+                        </a>
+                        <div class="form-group"><a href="select_admin"><div class="button">Cancel</div></a></div>
                 </center>    
                     
                     
@@ -70,4 +73,4 @@ mysqli_close($link);
             
     </div>
 
-</body>
+<?php include '../../footer.php'; ?>

@@ -64,5 +64,4 @@ mysqli_close($link);
         </div>
     </div>
 
-</body>
-</html>
+<?php include '../../footer.php'; ?>

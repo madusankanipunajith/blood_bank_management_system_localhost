@@ -1,5 +1,6 @@
 <?php
 	require '../../session.php';
+    include 'nic_validator.php';
 
 	// Define variables and initialize with empty values
     $nic = $password = $first_name=$last_name=$confirm_password=$hosid=$email= "";
@@ -11,7 +12,7 @@
     if(empty(trim($_POST["nic"]))){
         $nic_err = "Please enter an NIC.";
     
-    }elseif (strlen(trim($_POST["nic"])) > 12) {
+    }elseif (!is_valid_nic($_POST['nic'])) {
         $nic_err = "Your NIC is not Valid.";
         
     }else{
@@ -102,7 +103,7 @@
     if(empty(trim($_POST["first_name"]))){
         $first_name_err = " enter a first name.";     
     } else{
-        $first_name = trim($_POST["first_name"]);
+        $first_name = ucwords(trim($_POST["first_name"]));
     }
 
      // Validate Email
@@ -116,7 +117,7 @@
     if(empty(trim($_POST["last_name"]))){
         $last_name_err = " enter a last name.";     
     } else{
-        $last_name = trim($_POST["last_name"]);
+        $last_name = ucwords(trim($_POST["last_name"]));
     }
     
     // Check input errors before inserting in database
@@ -145,7 +146,7 @@
             mysqli_stmt_close($stmt);
         }
     }else{
-    	header("Location: ../new_admin?nic=$nic_err&conf=$confirm_password_err&pass=$password_err&first=$first_name_err&last=$last_name_err&hosid=$hosid_err&email=$email_err");
+    	header("Location: ../new_admin?nic=$nic_err&conf=$confirm_password_err&pass=$password_err&first=$first_name_err&last=$last_name_err&hosid=$hosid_err&email=$email_err&fnic=$nic&ffirst=$first_name&flast=$last_name&femail=$email&fhosid=$hosid");
     }
     
     // Close connection

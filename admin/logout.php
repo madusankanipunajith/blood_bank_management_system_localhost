@@ -24,7 +24,7 @@ session_destroy();
 
 
 
-header("location: ../reg_login.php");
+header("location: ../reg_login.php?logout=ok");
 
 
 

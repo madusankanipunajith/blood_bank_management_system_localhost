@@ -6,7 +6,7 @@
 
 	$sql="UPDATE campaign SET Flag='2' WHERE CampaignID='$id'";
 	if ($result= mysqli_query($link, $sql)) {
-		header("location: ../manage_campaign/index?dec=ok");
+		header("location: ../manage_campaign/index?decline=ok");
 	}else{
 		echo "Something went wrong";
 	}

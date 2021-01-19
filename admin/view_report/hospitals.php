@@ -17,7 +17,7 @@ mysqli_close($link);
         <div class="main">
             
             <div class="topic">
-                <div class="form-style-2-heading">View Report</div>
+                <div class="form-style-2-heading"><div align="center">View Report</div><?php echo"<input class=\"search\" type=\"text\" id=\"search\" placeholder=\"Search bar\">";?></div>
             </div>
            
             <div class="container-table100">
@@ -64,5 +64,4 @@ mysqli_close($link);
         </div>
     </div>
 
-</body>
-</html>
+<?php include '../../footer.php'; ?>

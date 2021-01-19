@@ -19,7 +19,7 @@
                     }
                     
                 }else{
-                    $nic_err="No Such a an Admin";
+                    $nic_err="No Such an Admin";
                 }
             }
 

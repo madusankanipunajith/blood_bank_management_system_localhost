@@ -18,7 +18,7 @@
 
         <div class="main">
             <center>
-                <div><a href="all_appointment">All Appointments</a></div>
+                <div class="form-style-2-heading"><a href="all_appointment">All Appointments</a></div>
             </center>
             <div class="container-table100">
                     <div style="width: 100%">
@@ -40,7 +40,8 @@
                     <div class="table100-body">
                         <table>
                             <?php
-                                // output data of each row
+                                if (mysqli_num_rows($result)>0) {
+                                    // output data of each row
                                 while($row = mysqli_fetch_assoc($result)) {
                                     
                                     $id = $row["DonorID"];
@@ -62,6 +63,9 @@
                                 echo "<td class='cell100 column6'>".$time."</td></tr>";
 
                             }
+                                }else{
+                                     echo "<center><p>No updates available</p></center>";
+                                }
                                 
                             ?>
                         
@@ -71,6 +75,7 @@
                     </div>
                     
                 </div>
+                <center><a href="index" style="color: #585858; font-size: 15px;"><i class="fa fa-backward"></i>Back</a></center>
             
         </div>
 
@@ -78,4 +83,5 @@
 // Close connection
 mysqli_close($link);
 ?>
+</div>
 <?php include '../../footer.php'; ?>

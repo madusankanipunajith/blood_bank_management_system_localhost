@@ -42,13 +42,13 @@
                             <div class="form-group <?php echo (!empty($hos_err)) ? 'has-error' : ''; ?>">
                                 <label>Hospital ID</label>
                                 <?php
-                                    $sql2="SELECT HospitalID FROM blood_bank_hospital";
+                                    $sql2="SELECT HospitalID, Name FROM blood_bank_hospital";
                                     $result2=mysqli_query($link, $sql2);
                                     if(mysqli_num_rows($result2)){
                                         $select= '<select name="id" class="form-control">';
-                                        $select.="<option value=\"$hosid\">$hosid</option>";
+                                        $select.="<option value=\"$hosid\">"."$hosid"."</option>";
                                         while($rs=mysqli_fetch_array($result2)){
-                                        $select.='<option value="'.$rs['HospitalID'].'">'.$rs['HospitalID'].'</option>';
+                                        $select.='<option value="'.$rs['HospitalID'].'">'.$rs['HospitalID'].' / '.$rs['Name'].'</option>';
                                         }
                                     }
                                         $select.='</select>';
@@ -71,7 +71,8 @@
                         </div>                         
                 
                 <center>
-                    <input type="submit" value="Update"><br>
+                    <input class="button btn-edit" type="submit" value="Update">
+                    <div class="form-group"><a href="select_admin"><div class="button">Cancel</div></a></div>
                 </center>     
                     </form>
                     
@@ -91,5 +92,5 @@ mysqli_close($link);
 ?>            
     </div>
 
-</body>
-</html>
+
+<?php include '../../footer.php'; ?>
