@@ -59,7 +59,7 @@ mysqli_close($link);
                                 echo "<td class='cell100 column6'>".$address."</td>";
                                 
                                 echo "<td class='cell100 column4'>".$district."</td>";
-                                echo "<td class='cell100 column9'><a href=\"more_info?hosid=$hosid&hosname=$name\"><i class=\"fa fa-history\"></i></a></td>";
+                                echo "<td class='cell100 column9'><a href=\"../application/select-hospital?hosid=$hosid&hosname=$name\"><i class=\"fa fa-history\"></i></a></td>";
                                 
                                 
                             }

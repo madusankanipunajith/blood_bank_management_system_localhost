@@ -6,6 +6,9 @@ $hosid=$hosname=$telephone="";
 $camp_err=$estimate_err=$date_err=$time_err=$location_err="";
 $date=$time=$estimate=$name=$location="";
 
+if (isset($_SESSION['hosid'])) { $hosid= $_SESSION['hosid'];}
+if (isset($_SESSION['hosname'])) { $hosname= $_SESSION['hosname'];}
+
 $today=date("Y-m-d", strtotime( "+1 days" ));
 
 if ($_SERVER["REQUEST_METHOD"] == "GET") {
@@ -21,9 +24,6 @@ if ($_SERVER["REQUEST_METHOD"] == "GET") {
         if (isset($_GET['fname'])) {$name=$_GET['fname'];}
         if (isset($_GET['floc'])) {$location=$_GET['floc'];}
 
-
-        if (isset($_GET['hosid'])) { $hosid= $_GET['hosid'];}
-        if (isset($_GET['hosname'])) { $_SESSION['hosname']= $_GET['hosname'];}if (isset($_SESSION['hosname'])) { $hosname= $_SESSION['hosname'];}
 
         $sql2="SELECT GROUP_CONCAT(TelephoneNo SEPARATOR ' / ') AS TelephoneNo FROM blood_bank_hospital_telephone WHERE BBID='$hosid' ";
         if ($result2=mysqli_query($link, $sql2)) {
