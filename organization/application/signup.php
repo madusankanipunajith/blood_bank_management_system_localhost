@@ -3,8 +3,8 @@
     // require_once "../session.php";
         require_once "../../config.php";
     //define variables 
-    $org_name=$district=$president=$user_name=$mobile=$password=$confirm_password=$purpose=$email="";
-    $org_err=$district_err=$president_err=$username_err=$mobile_err=$password_err=$confirm_password_err=$email_err="";
+    $org_name=$district=$president=$user_name=$mobile=$mobile2=$password=$confirm_password=$purpose=$email="";
+    $org_err=$district_err=$president_err=$username_err=$mobile_err=$mobile2_err=$password_err=$confirm_password_err=$email_err="";
     // Processing form data when form is submitted
     if($_SERVER["REQUEST_METHOD"]=="POST")
     {
@@ -119,9 +119,15 @@
 
         $purpose= $_POST["purpose"];
         $mobile2= $_POST["mobile2"];
+
+        if (!empty(trim($_POST["mobile2"]))) {
+        if (strlen(trim($_POST["mobile2"])) != 10) {
+            $mobile2_err= "telephone number must be 10 numbers";
+        }
+    }
          
         //check the errors before inserting database
-        if(empty($org_err) && empty($username_err)&& empty($password_err) && empty($confirm_password_err) && empty($mobile_err) && empty($president_err) && empty($email_err) && empty($district_err))
+        if(empty($org_err) && empty($username_err)&& empty($password_err) && empty($confirm_password_err) && empty($mobile_err) && empty($president_err) && empty($email_err) && empty($district_err) && empty($mobile2_err))
         {
             //prepare insert statemet
             $sql= "INSERT INTO organization (OrganizationName, District, President, UserName, Password, Purpose, Email) VALUES(?, ?, ?, ?, ?, ?, ?)";
@@ -157,7 +163,7 @@
             }
 
         }else{
-            header("Location: ../signup?org=$org_err&user=$username_err&pass=$password_err&conf=$confirm_password_err&mob=$mobile_err&email=$email_err&pre=$president_err&dis=$district_err");
+            header("Location: ../signup?org=$org_err&user=$username_err&pass=$password_err&conf=$confirm_password_err&mob=$mobile_err&mob2=$mobile2_err&email=$email_err&pre=$president_err&dis=$district_err&forgname=$org_name&fuser=$user_name&flocation=$district&fpresident=$president&femail=$email&ftel1=$mobile&ftel2=$mobile2&fpurpose=$purpose");
         }
         //close db connection
         mysqli_close($link); 

@@ -68,6 +68,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 if(mysqli_stmt_execute($stmt))
                 {
                     // Redirect to login page
+                    unset($_SESSION['hosid']);unset($_SESSION['hosname']);
                     header("location: ../add-campaign/index?reg=ok");
                 }
                 else{
