@@ -50,13 +50,16 @@
             }
         }
         //validation of password 
+        $pattern = ' ^.*(?=.{7,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$ ';
         if(empty(trim($_POST["password"])))
         {
             $password_err="Please enter password";
         }
-        elseif(strlen(trim($_POST["password"])) < 6)
+        elseif(strlen(trim($_POST["password"])) < 8)
         {
-            $password_err="Please enter valid password";
+            $password_err="Password must have atleast 8 characters.";
+        }elseif(!preg_match($pattern,trim($_POST["password"]))){
+            $password_err = "Password must contain at least a number, uppercase letter, lowercase letter and special character"; //verify($enter_password)
         }
         else{
             $password=trim($_POST["password"]);

@@ -1,11 +1,6 @@
 <?php
-	session_start();
-    // Check if the user is logged in, if not then redirect him to login page
-    if(!isset($_SESSION["id-4"]) || !isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: ../../reg_login.php");
-    exit;
-}
-
+	
+require '../session.php';
 // Include config file
 require_once "../../config.php";
  
@@ -17,39 +12,49 @@ $today=date("Y-m-d");
 
 // Processing form data when form is submitted
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] == "POST"){unset_cache();
 	
     if (isset($_GET['hosid'])) {$hosid= $_GET['hosid'];}
 
 	// Check if campaign name is empty
     if(empty(trim($_POST["campaign_name"]))){
         $name_err = "Please enter your campaign name.";
+        set_camp_name_err($name_err);
     } else{
         $name = trim($_POST["campaign_name"]);
+        set_camp_name($name);
     }
     // Check if location is empty
     if(empty(trim($_POST["location"]))){
         $location_err = "Please enter your location.";
+        set_location_err($location_err);
     } else{
         $location = trim($_POST["location"]);
+        set_location($location);
     }
     // Check if estimation is empty
     if(empty(trim($_POST["estimate"]))){
         $estimate_err = "Please enter your estimation roughly.";
+        set_estimate_err($estimate_err);
     } else{
         $estimate = trim($_POST["estimate"]);
+        set_estimate($estimate);
     }
     // Check if date is empty
     if(empty(trim($_POST["date"]))){
         $date_err = "Please enter your date.";
+        set_camp_date_err($date_err); 
     }else{
         $date = trim($_POST["date"]);
+        set_camp_date($date);
     }
     // Check if time is empty
     if(empty(trim($_POST["time"]))){
         $time_err = "Please enter your time.";
+        set_camp_time_err($time_err);
     } else{
         $time = trim($_POST["time"]);
+        set_camp_time($time);
     }
 
     //check the errors before inserting database
@@ -69,6 +74,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 {
                     // Redirect to login page
                     unset($_SESSION['hosid']);unset($_SESSION['hosname']);
+                    unset_cache();
                     header("location: ../add-campaign/index?reg=ok");
                 }
                 else{

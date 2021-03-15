@@ -28,7 +28,7 @@
                     //store the result
                     mysqli_stmt_store_result($stmt);
                     //count no of rows
-                  
+
                     if(mysqli_stmt_num_rows($stmt)==1)
                     {
                         $username_err="This user name is already taken";
@@ -45,17 +45,24 @@
                 mysqli_stmt_close($stmt);
 
 
-                
+
             }
         }
-        //validation of password 
+
+        $pattern = ' ^.*(?=.{7,})(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).*$ ';
+        //$enter_password = trim($_POST["password"]);
+        //validation of password
         if(empty(trim($_POST["password"])))
         {
             $password_err="Please enter password";
         }
-        elseif(strlen(trim($_POST["password"])) < 6)
+        elseif(strlen(trim($_POST["password"])) < 8)
         {
             $password_err="Please enter valid password";
+        }
+        elseif(!preg_match($pattern,trim($_POST["password"])))
+        {
+           $password_err = "Password must contain at least a number, uppercase letter, lowercase letter and special character"; //verify($enter_password)
         }
         else{
             $password=trim($_POST["password"]);
@@ -133,12 +140,12 @@
             if($stmt=mysqli_prepare($link,$sql))
             {
                 mysqli_stmt_bind_param($stmt,"sssssss",$param_username,$hos_name,$address,$district,$chief_doctor,$param_password,$email);
-                
+
                 //set parameters
                 $param_username=$user_name;
                 $param_password=password_hash($password, PASSWORD_DEFAULT);
 
-                
+
                 //execute the prepare statement
                 if(mysqli_stmt_execute($stmt))
                 {
@@ -162,15 +169,15 @@
             }
             //insert mobile numbers
 
-            
+
         }
         else
         {
             header("Location: ../signup?hos=$hos_err&add=$address_err&dis=$district_err&dr=$dr_err&user=$username_err&mobi=$mobile_err&pass=$password_err&compass=$confirm_password_err&mail=$email_err");
         }
         //close db connection
-        mysqli_close($link); 
-       
+        mysqli_close($link);
+
     }
-	
+
 ?>
