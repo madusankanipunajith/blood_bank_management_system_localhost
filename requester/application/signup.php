@@ -14,6 +14,84 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }elseif (strlen(trim($_POST["nic"])) > 12) {
         $nic_err = "Your NIC is not Valid.";
     } else{
+
+        // Year
+        $nic = trim($_POST["nic"]);
+        echo $nic;
+        if (strlen(trim($_POST["nic"])) == 10){
+            $year = '19'.substr($nic, 0, 2);
+            $dayText = (int)substr($nic, 2, 3);
+        } else {
+            $year = substr($nic, 0, 4);
+            $dayText = (int)substr($nic, 4, 3);
+        }
+
+        // Gender
+        if ($dayText > 500) {
+            $gender = "female";
+            $dayText = $dayText - 500;
+        } else {
+            $gender = "male";
+        }
+
+        // Day Digit Validation
+        if ($dayText < 1 && $dayText > 366) {
+            echo "Day Digit Error";
+        } else {
+            //Month
+            if ($dayText > 335) {
+                $day = $dayText - 335;
+                $month = "12";
+            }
+            else if ($dayText > 305) {
+                $day = $dayText - 305;
+                $month = "11";
+            }
+            else if ($dayText > 274) {
+                $day = $dayText - 274;
+                $month = "10";
+            }
+            else if ($dayText > 244) {
+                $day = $dayText - 244;
+                $month = "09";
+            }
+            else if ($dayText > 213) {
+                $day = $dayText - 213;
+                $month = "08";
+            }
+            else if ($dayText > 182) {
+                $day = $dayText - 182;
+                $month = "07";
+            }
+            else if ($dayText > 152) {
+                $day = $dayText - 152;
+                $month = "06";
+            }
+            else if ($dayText > 121) {
+                $day = $dayText - 121;
+                $month = "05";
+            }
+            else if ($dayText > 91) {
+                $day = $dayText - 91;
+                $month = "04";
+            }
+            else if ($dayText > 60) {
+                $day = $dayText - 60;
+                $month = "03";
+            }
+            else if ($dayText < 32) {
+                $month = "01";
+                $day = $dayText;
+            }
+            else if ($dayText > 31) {
+                $day = $dayText - 31;
+                $month = "02";
+            }
+        }
+        
+
+        $dob = $year.'-'.$month.'-'.$day;
+
         // Prepare a select statement
         $sql = "SELECT FirstName FROM requestor WHERE NIC = ?";
         
@@ -75,21 +153,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $last_name_err = "Please enter a last name.";     
     } else{
         $last_name = trim($_POST["last_name"]);
-    }
-
-    // Validate dob
-    if(empty(trim($_POST["dob"]))){
-        $dob_err = "Please enter a dob.";     
-    } else{
-        $dob = trim($_POST["dob"]);
-    }
-
-
-    // Validate Gender
-    if(empty(trim($_POST["gender"]))){
-        $gender_err = "Please enter your gender.";     
-    } else{
-        $gender = trim($_POST["gender"]);
     }
 
     // Validate District
