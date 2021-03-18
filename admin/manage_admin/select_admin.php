@@ -12,9 +12,11 @@ if(isset($_GET['delete'])){
     $_SESSION['process']= "delete";
 }
 
-if (isset($_GET['nic'])) {
+/*if (isset($_GET['nic'])) {
     $nic_err= $_GET['nic'];
-}
+}*/
+$nic_err= get_nic_err();
+
 if (isset($_GET['fnic'])) {
     $nic= $_GET['fnic'];
 }

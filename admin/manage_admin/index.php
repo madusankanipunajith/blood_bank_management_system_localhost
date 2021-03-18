@@ -2,8 +2,8 @@
 <?php
     
     require '../session.php';
-     include '../header.php';
-    
+    include '../header.php';
+    unset_cache();    
 ?>
 
 <body>
