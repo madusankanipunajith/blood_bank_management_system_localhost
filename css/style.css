@@ -76,7 +76,7 @@ body {
     height: auto;
     position: relative;
 }
- 
+
 
 .top-bar {
     height: 100px;
@@ -1415,6 +1415,27 @@ select {
     font-size: 15px;
 }
 
+/*hospital request*/
+.type-request {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
 
+/*hospital report*/
+.chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bloodVolume {
+  align-items: center;
+  margin-left: 30%;
+}
+.bloodVolume i {
+  display: inline;
+  margin-left: 10px;
+  font-size: medium;
+}
 /*# sourceMappingURL=style.css.map */
-
