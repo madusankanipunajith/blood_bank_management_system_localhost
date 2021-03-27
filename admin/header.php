@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>System Admin</title>
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
