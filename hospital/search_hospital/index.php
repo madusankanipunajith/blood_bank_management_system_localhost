@@ -39,7 +39,7 @@
 
               ?>
             <div class="type-check">
-                <form action="hospital_result.php" method="POST">
+                <form action="../application/hospital_result.php" method="POST">
                   <div class="form-check <?php echo (!empty($blood_error)) ? 'has-error' : ''; ?>">
                       <label for="btype">Enter Blood Type</label>
                       <select name="btype" id="btype">
