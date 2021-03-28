@@ -118,6 +118,11 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                             <input type="password" name="confirm_password" class="form-control">
                             <span class="help-block"><?php echo $confirm_password_err; ?></span>
                         </div>
+                        <div>
+                            <p>(Optional) Check the box below if you agree to reveal your direct contact number publicly to the Blood Requesters.</p>
+                            <label><input class = "column9 checkmark" type="checkbox" name="agree" class="form-control" value = "Yes">
+                            I agree</label>
+                        </div>
                         <div class="form-group">
                             <input type="submit"  value="Submit">
                             <input type="reset" class="btn btn-default" value="Reset">
