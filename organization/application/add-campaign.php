@@ -1,11 +1,6 @@
 <?php
-	session_start();
-    // Check if the user is logged in, if not then redirect him to login page
-    if(!isset($_SESSION["id-4"]) || !isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
-    header("location: ../../reg_login.php");
-    exit;
-}
-
+	
+require '../session.php';
 // Include config file
 require_once "../../config.php";
  
@@ -21,10 +16,11 @@ $today=date("Y-m-d");
 
 // Processing form data when form is submitted
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+if($_SERVER["REQUEST_METHOD"] == "POST"){unset_cache();
 	// Check if hosid is empty
     if(empty(trim($_POST["hosid"]))){
         $hosid_err = "Please enter your blood bank hospital ID from the given table.";
+        set_hospital_err($hosid_err);
     }else{
      	//prepare statement
             $sql="SELECT Name FROM blood_bank_hospital WHERE HospitalID=?";
@@ -44,6 +40,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     if(mysqli_stmt_num_rows($stmt)==0)
                     {
                         $hosid_err="There is no such a Hospital. please check the table again";
+                        set_hospital_err($hosid_err);
                     }
                     else{
                         $hosid=trim($_POST["hosid"]);
@@ -64,30 +61,35 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 	// Check if campaign name is empty
     if(empty(trim($_POST["campaign_name"]))){
         $name_err = "Please enter your campaign name.";
+        set_camp_name_err($name_err);
     } else{
         $name = trim($_POST["campaign_name"]);
     }
     // Check if location is empty
     if(empty(trim($_POST["location"]))){
         $location_err = "Please enter your location.";
+        set_location_err($location_err);
     } else{
         $location = trim($_POST["location"]);
     }
     // Check if estimation is empty
     if(empty(trim($_POST["estimate"]))){
         $estimate_err = "Please enter your estimation roughly.";
+        set_estimate_err($estimate_err);
     } else{
         $estimate = trim($_POST["estimate"]);
     }
     // Check if date is empty
     if(empty(trim($_POST["date"]))){
         $date_err = "Please enter your date.";
+        set_camp_date_err($date_err);
     }else{
         $date = trim($_POST["date"]);
     }
     // Check if time is empty
     if(empty(trim($_POST["time"]))){
         $time_err = "Please enter your time.";
+        set_camp_time_err($time_err);
     } else{
         $time = trim($_POST["time"]);
     }
@@ -108,6 +110,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 if(mysqli_stmt_execute($stmt))
                 {
                     // Redirect to login page
+                    unset_cache();
                     header("location: ../index?reg=ok");
                 }
                 else{
@@ -118,7 +121,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
             }
         }else{
-            header("Location:../add-campaign?hos=$hosid_err&name=$name_err&loc=$location_err&est=$estimate_err&date=$date_err&time=$time_err");
+            header("Location:../add-campaign");
         }
 
 

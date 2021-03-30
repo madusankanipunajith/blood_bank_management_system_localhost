@@ -12,6 +12,7 @@
         if(empty(trim($_POST["username"])))
         {
             $username_err="Please enter a user name";
+            set_setting_user_err($username_err);
 
         }elseif(trim($_POST["username"])=="$nic"){
             $username=trim($_POST["username"]);
@@ -36,9 +37,11 @@
                     if(mysqli_stmt_num_rows($stmt)==1)
                     {
                         $username_err="This user name is already taken";
+                        set_setting_user_err($username_err);
                     }
                     else{
                         $username=trim($_POST["username"]);
+                        set_setting_user($username);
                     }
                 }
                 else{
@@ -57,21 +60,24 @@
         if(empty(trim($_POST["email"])))
         {
             $email_err="Please enter the Email";
+            set_setting_email_err($email_err);
         }
         else{
             $email=trim($_POST["email"]);
+            set_setting_email($email);
         }
 
         if (empty($username_err) && empty($email_err)) {
             $sql3="UPDATE super_admin SET UserName='$username', Email='$email' WHERE UserName='$nic'";
             if ($result=mysqli_query($link, $sql3)) {
                 $_SESSION["id-6"]=$username;
+                unset_cache();
                 header("Location: ../index?user=ok");
             }else{
                 echo "Cannot update plz check again";
             }
         }else{
-        	header("Location: ../index?users=$username_err&email=$email_err");
+        	header("Location: ../index");
         }
     }
 

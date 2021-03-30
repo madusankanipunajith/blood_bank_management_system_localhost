@@ -1,7 +1,7 @@
 <?php
 
 require_once "../session.php";
-
+unset_cache();
 //$nic = htmlspecialchars($_SESSION["nic"]);
   $nic = $_SESSION["id-4"];
  
@@ -32,6 +32,7 @@ if (mysqli_num_rows($result) > 0) {
     $president= $row["President"];
     $location = $row["District"];
     $email= $row["Email"];
+    $purpose= $row["Purpose"];
 
   }
 } else {
@@ -110,11 +111,16 @@ if (mysqli_num_rows($result) > 0) {
                                 </tr>
 
                                 <tr class="row100 body">
-                                    <td class="cell100 column4">Telephone 1</td>
+                                    <td class="cell100 column4">Purpose</td>
+                                    <td class="cell100 column5"><?php echo $purpose; ?></td>
+                                </tr>
+
+                                <tr class="row100 body">
+                                    <td class="cell100 column4">Telephone </td>
                                     <td class="cell100 column5"><?php echo $tel1; ?></td>
                                 </tr>
                                 <tr class="row100 body">
-                                    <td class="cell100 column4">Telephone 2</td>
+                                    <td class="cell100 column4">Telephone (Optional)</td>
                                     <td class="cell100 column5"><?php echo $tel2; ?></td>
                                 </tr>
 
@@ -131,14 +137,14 @@ if (mysqli_num_rows($result) > 0) {
             <div class="form-row" style="margin-left: 20%;">
                 <div class="form-group">
                 <?php
-                    echo "<a style=\"color: green;\" href=\"edit-organization.php\" onclick=\"return confirm('Are you sure to Edit?')\">
-                    <div class=\"tile-3 clearfix\">Edit</div></a>";
+                    echo "<a href=\"edit-organization.php\" onclick=\"return confirm('Are you sure to Edit?')\">
+                    <button class=\"btn-edit\">Edit</button></a>";
                 ?>
                 </div>
                 <div class="form-group">
                 <?php
-                   echo "<a style=\"color: red;\" href=\"../application/delete.php?nic=$nic\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\">
-                   <div class=\"tile-3 clearfix\" >Delete</div></a>"; 
+                   echo "<a href=\"../application/delete.php?nic=$nic\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\">
+                   <button class=\"btn-delete\" >Delete</button></a>"; 
                 ?>
                 </div>
             </div> 

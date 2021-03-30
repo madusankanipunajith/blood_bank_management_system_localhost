@@ -53,20 +53,6 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                             <span class="help-block"><?php echo $email_err; ?></span>
                         </div>
                         
-                        <div class="form-group <?php echo (!empty($dob_err)) ? 'has-error' : ''; ?>">
-                            <label>Date of Birth</label>
-                            <input type="date" name="dob" class="form-control">
-                            <span class="help-block"><?php echo $dob_err; ?></span>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label>Gender</label>
-                            <select id="gender" name="gender" class="form-control">
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                            </select>
-                            <span class="help-block"><?php echo $gender_err; ?></span>
-                        </div>
                         <div class="form-group <?php echo (!empty($district_err)) ? 'has-error' : ''; ?>">
                             <label>District</label>
                             <?php

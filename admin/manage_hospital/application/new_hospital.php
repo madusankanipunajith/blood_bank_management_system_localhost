@@ -10,7 +10,7 @@
         // Validate username
     if(empty(trim($_POST["name"]))){
         $name_err = "Please enter the hospital name.";
-    
+        set_hospital_err($name_err);
     }else{
         // Prepare a select statement
         $sql = "SELECT HospitalID FROM blood_bank_hospital WHERE Name = ?";
@@ -29,9 +29,11 @@
                 
                 if(mysqli_stmt_num_rows($stmt) == 1){
                     $name_err = "This hospital name is already taken.";
+                    set_hospital_err($name_err);
                 } else{
                     $temp = trim($_POST["name"]);
                     $name =  ucwords($temp);
+                    set_hospital($name);
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
@@ -44,38 +46,49 @@
 
     // Validate District
     if(empty(trim($_POST["district"]))){
-        $district_err = "Please enter district";     
+        $district_err = "Please enter district"; 
+        set_district_err($district_err);    
     } else{
         $district = trim($_POST["district"]);
+        set_district($district);
     }
 
     // Validate address
     if(empty(trim($_POST["address"]))){
-        $address_err = "Please enter district";     
+        $address_err = "Please enter district";  
+        set_address_err($address_err);   
     } else{
         $address = trim($_POST["address"]);
+        set_address($address);
     }
 
     // Validate capacity
     if(empty(trim($_POST["capacity"]))){
-        $capacity_err = "Please enter capacity";     
+        $capacity_err = "Please enter capacity";  
+        set_cap_err($capacity_err);   
     } else{
         $capacity = trim($_POST["capacity"]);
+        set_cap($capacity);
     }
 
     // Validate Telephone
     if(empty(trim($_POST["tel-1"]))){
-        $telephone_err = "Please enter Telephone";     
+        $telephone_err = "Please enter Telephone";  
+        set_telephone_err($telephone_err);   
     }elseif(strlen(trim($_POST["tel-1"])) != 10){
         $telephone_err = "telephone number must be 10 numbers";
+        set_telephone_err($telephone_err);
     }else{
         $telephone = trim($_POST["tel-1"]);
+        set_telephone($telephone);
     }
 
     $telephone2 = trim($_POST["tel-2"]);
+    set_telephone2($telephone2);
     if (!empty(trim($_POST["tel-2"]))) {
         if (strlen(trim($_POST["tel-2"])) != 10) {
             $telephone2_err= "telephone number must be 10 numbers";
+            set_telephone2_err($telephone2_err);
         }
     }
     //isempty($name_err) && isempty($district_err) && isempty($address_err) && isempty($telephone_err)
@@ -113,6 +126,7 @@
                     }
 
                 // Redirect to login page
+                unset_cache();    
                 header("location: ../index.php?reg=ok");
             } else{
                 echo "Something went wrong. Please try again later.";
@@ -122,7 +136,8 @@
             mysqli_stmt_close($stmt);
         }
     }else{
-        header("Location: ../new_hospital?name=$name_err&add=$address_err&dis=$district_err&tel=$telephone_err&tel2=$telephone2_err&cap=$capacity_err&fname=$name&fdis=$district&fadd=$address&fcap=$capacity&ftel1=$telephone&ftel2=$telephone2");
+        /*header("Location: ../new_hospital?name=$name_err&add=$address_err&dis=$district_err&tel=$telephone_err&tel2=$telephone2_err&cap=$capacity_err&fname=$name&fdis=$district&fadd=$address&fcap=$capacity&ftel1=$telephone&ftel2=$telephone2");*/
+        header("Location:../new_hospital");
     }
 
 

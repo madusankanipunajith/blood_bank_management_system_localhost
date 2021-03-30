@@ -1,7 +1,7 @@
 <?php
     require '../session.php';
     include '../header.php';
-    
+    unset_cache();
 ?>
 
 <body>
@@ -17,6 +17,9 @@
             <?php
                 if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['del'])) {
                     echo "<p style=\"color:red; text-align:center;\">Deleted Successfully !!!</p>";
+                }
+                if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['reg'])) {
+                    echo "<p style=\"color:green; text-align:center;\">New Hospital Added Successfully !!!</p>";
                 }
             ?>
                 <form action="" method="post">

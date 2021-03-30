@@ -27,10 +27,10 @@ mysqli_close($link);
 
                 <?php
                     if (isset($_GET['admin'])) {
-                        echo "<p class=\"has-error\">admins are already working belongs to this hospital. please take an action to them before delete the Hospital</p>";
+                        echo "<p class=\"has-error\">admins are already working belongs to this hospital. please take an action to them before delete the Hospital-<a href=\"admin_action\">Do Action</a></p>";
                     }
                     if (isset($_GET['packet'])) {
-                        echo "<p class=\"has-error\">There are some blood packets belongs to this hospital. please take an action to them before delete the Hospital</p>";
+                        echo "<p class=\"has-error\">There are some blood packets belongs to this hospital. please take an action to them before delete the Hospital-<a href=\"packet_action\">Do Action</a></p>";
                     }
                 ?>
 

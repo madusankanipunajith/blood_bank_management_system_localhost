@@ -14,6 +14,11 @@
         ?>
 
         <div class="main">
+            <?php
+                if (isset($_GET['success'])) {
+                    echo "<center><p class=\"active\">Deleted Succesfully...</p></center>";
+                }
+            ?>
             
             <div class="topic">
                 <div class="form-style-2-heading">Select Hospitals</div>
