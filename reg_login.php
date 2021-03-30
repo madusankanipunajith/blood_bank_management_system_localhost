@@ -153,13 +153,13 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 */
     $reg=$del=$out="";
     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['key'])) {
-        $del= "Succesfully Deleted !!!";
+        $del= "Your account was deleted Succesfully.";
     }
     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['reg'])) {
-        $reg= "Succesfully Created !!!";
+        $reg= "The account was created successfully!";
     }
     if ($_SERVER["REQUEST_METHOD"] == "GET" && isset($_GET['logout'])) {
-        $out= "Log Out Succesfully !!!";
+        $out= "Logged Out";
     }
 
 ?>

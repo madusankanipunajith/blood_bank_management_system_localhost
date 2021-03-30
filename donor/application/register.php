@@ -210,20 +210,27 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $email = trim($_POST["email"]);
     }
 
+    // Validate Privacy
+    if(isset($_POST['agree']) == 'Yes'){
+        $agree = 1;
+    } else {
+       $agree = 1;
+    }
+
     // Check input errors before inserting in database
-    if(empty($nic_err) && empty($password_err) && empty($confirm_password_err) && empty($dob_err) && empty($gender_err) && empty($telephone_err) && empty($district_err) && empty($first_name_err) && empty($last_name_err) && empty($addline1_err) && empty($email_err) && empty($telephone2_err)){
-
+    if(empty($nic_err) && empty($password_err) && empty($confirm_password_err) && empty($dob_err) && empty($gender_err) && empty($telephone_err) && empty($district_err) && empty($first_name_err) && empty($last_name_err) && empty($addline1_err) && empty($email_err) && empty($telephone2_err) && empty($bgroup_err)){
+        
         // Prepare an insert statement
-        $sql = "INSERT INTO donor (nic, password, first_name, last_name, dob, bloodgroup, gender, district, addressline1, addressline2, email) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
-
+        $sql = "INSERT INTO donor (nic, password, first_name, last_name, dob, bloodgroup, gender, district, addressline1, addressline2, email, privacy) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+         
         if($stmt = mysqli_prepare($link, $sql)){
             // Bind variables to the prepared statement as parameters
-            mysqli_stmt_bind_param($stmt, "sssssssssss", $param_username, $param_password, $first_name, $last_name, $dob, $bgroup, $gender, $district, $addline1, $addline2, $email);
-
+            mysqli_stmt_bind_param($stmt, "ssssssssssss", $param_username, $param_password, $first_name, $last_name, $dob, $bgroup, $gender, $district, $addline1, $addline2, $email, $agree);
+            
             // Set parameters
             $param_username = $nic;
             $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-
+            
             // Attempt to execute the prepared statement
             if(mysqli_stmt_execute($stmt)){
                    $sql1= "INSERT INTO donor_telephone (NIC, TelephoneNo, Flag) VALUES ('$nic', '$telephone', '1')";
@@ -234,6 +241,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                         }
                     }else{echo "Telephone1 errors";}
                 // Redirect to login page
+                unset_cache();
                 header("location: ../../reg_login.php?reg=ok");
             } else{
                 echo "Something went wrong. Please try again later.";

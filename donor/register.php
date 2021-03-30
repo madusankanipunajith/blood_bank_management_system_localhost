@@ -34,24 +34,24 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                        <center> <h2>Donor registration form</h2></center><br>
                         <div class="form-row">
                             <div class="form-group <?php echo (!empty($first_name_err)) ? 'has-error' : ''; ?>">
-                                <label>First Name</label>
+                                <label>First Name (මුල් නම)</label>
                                 <input type="text" name="first_name" class="form-control">
                                 <span class="help-block"><?php echo $first_name_err; ?></span>
                             </div>
                             <div class="form-group <?php echo (!empty($last_name_err)) ? 'has-error' : ''; ?>">
-                                <label>Last Name</label>
+                                <label>Last Name (වාසගම)</label>
                                 <input type="text" name="last_name" class="form-control">
                                 <span class="help-block"><?php echo $last_name_err; ?></span>
                             </div>
                         </div>
                         <div class="form-group <?php echo (!empty($nic_err)) ? 'has-error' : ''; ?>">
-                            <label>National Identification Number (NIC)</label>
+                            <label>National Identification Number (ජාතික හැදුනුම්පත් අංකය)</label>
                             <input type="text" name="nic" class="form-control">
                             <span class="help-block"><?php echo $nic_err; ?></span>
                         </div>
 
                         <div class="form-group <?php echo (!empty($district_err)) ? 'has-error' : ''; ?>">
-                            <label>District</label>
+                            <label>District (පදිංචි දිස්ත්‍රික්කය)</label>
                             <?php
                                 $sql="SELECT name FROM district";
                                 $result=mysqli_query($link, $sql);
@@ -68,8 +68,9 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                             <span class="help-block"><?php echo $district_err; ?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($bgroup_err)) ? 'has-error' : ''; ?>">
-                            <label>Blood Group</label>
-                            <select id="bgroup" name="bgroup" class="form-control">
+                            <label>Blood Group (ලේ වර්ගය)</label>
+                            <select id="bgroup" name="bgroup" class="form-control " required>
+                                <option value="<?php echo isset($_SESSION["group"])?$_SESSION["group"]:"";?>"><?php echo isset($_SESSION["group"])?$_SESSION["group"]:"";?></option>
                                 <option value="O+">O+</option>
                                 <option value="O-">O-</option>
                                 <option value="A+">A+</option>
@@ -78,16 +79,17 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                                 <option value="B-">B-</option>
                                 <option value="AB+">AB+</option>
                                 <option value="AB-">AB-</option>
+                                <option value="NA">Do not know</option>
                             </select>
                             <span class="help-block"><?php echo $bgroup_err; ?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($email_err)) ? 'has-error' : ''; ?>">
-                            <label>Email</label>
+                            <label>Email (විද්‍යුත් තැපැල් ලිපිනය)</label>
                             <input type="email" name="email" class="form-control">
                             <span class="help-block"><?php echo $email_err; ?></span>
                         </div>    
                         <div class="form-group <?php echo (!empty($addline1_err)) ? 'has-error' : ''; ?>">
-                            <label>Address Line 1</label>
+                            <label>Address Line 1 (ලිපිනය)</label>
                             <input type="text" name="addline1" class="form-control">
                             <span class="help-block"><?php echo $addline1_err; ?></span>
                         </div>
@@ -98,7 +100,7 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                         </div>
                         
                         <div class="form-group <?php echo (!empty($telephone_err)) ? 'has-error' : ''; ?>">
-                            <label>Telephone</label>
+                            <label>Telephone (දුරකතන)</label>
                             <input type="number" name="telephone-1" class="form-control">
                             <span class="help-block"><?php echo $telephone_err; ?></span>
                         </div>
@@ -109,14 +111,19 @@ $nic_err = $password_err = $confirm_password_err = $first_name_err = $last_name_
                         </div>
                         
                         <div class="form-group <?php echo (!empty($password_err)) ? 'has-error' : ''; ?>">
-                            <label>Password</label>
-                            <input type="password" name="password" class="form-control">
+                            <label>Password (මුරපදය)<span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></label>
+                            <input type="password" name="password" class="form-control" id="pass_log_id" value="<?php echo isset($_SESSION["new_password"])?$_SESSION["new_password"]:""; ?>" minlength="8" required>
                             <span class="help-block"><?php echo $password_err; ?></span>
                         </div>
                         <div class="form-group <?php echo (!empty($confirm_password_err)) ? 'has-error' : ''; ?>">
-                            <label>Confirm Password</label>
-                            <input type="password" name="confirm_password" class="form-control">
+                            <label>Confirm Password (මුරපදය සනාථ කරන්න)<span toggle="#password-field" class="fa fa-fw fa-eye field_icon toggle-password"></span></label>
+                            <input type="password" name="confirm_password" class="form-control" minlength="8" required>
                             <span class="help-block"><?php echo $confirm_password_err; ?></span>
+                        </div>
+                        <div>
+                            <p>(Optional) Check the box below if you agree to reveal your Email to the Blood Requesters who uses the system.</p>
+                            <label><input class = "column9 checkmark" type="checkbox" name="agree" class="form-control" value = "Yes">
+                            I agree</label>
                         </div>
                         <div class="form-group">
                             <input type="submit"  value="Submit">

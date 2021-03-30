@@ -3,7 +3,7 @@
 <html>
 
 <head>
-
+	<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
 	<link rel="stylesheet" type="text/css" href="/bloodbank/css/style.css" >
 	<script type="text/javascript" src="/bloodbank/js/script.js" ></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
