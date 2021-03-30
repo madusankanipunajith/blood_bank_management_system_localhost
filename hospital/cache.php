@@ -47,6 +47,22 @@ function set_confirm_password_err($x)
 {
 	$_SESSION['confirm_password_err']=$x;
 }
+function set_report_start_date_err($x)
+{
+	$_SESSION['start_date']=$x;
+}
+function set_report_end_date_err($x)
+{
+	$_SESSION['end_date']=$x;
+}
+function set_blood_type_err($x)
+{
+	$_SESSION['blood_type']=$x;
+}
+function set_blood_volume_err($x)
+{
+	$_SESSION['blood_volume']=$x;
+}
 
 
 	//set variables
@@ -94,7 +110,14 @@ function set_confirm_password($x)
 {
 	$_SESSION['confirm_password']=$x;
 }
-
+function set_blood_type($x)
+{
+	$_SESSION['blood']=$x;
+}
+function set_blood_volume($x)
+{
+	$_SESSION['volume']=$x;
+}
 
 
 	//get
@@ -163,6 +186,42 @@ function get_address_err()
 {
 	if (isset($_SESSION['address_err'])) {
 		return $_SESSION['address_err'];
+	}
+}
+function get_report_start_date_err()
+{
+	if(isset($_SESSION['start_date'])){
+		return $_SESSION['start_date'];
+	}
+}
+function get_report_end_date_err()
+{
+	if(isset($_SESSION['end_date'])){
+        return $_SESSION['end_date'];
+	}
+}
+function get_blood_type_err()
+{
+	if(isset($_SESSION['blood_type'])){
+		return $_SESSION['blood_type'];
+	}
+}
+function get_blood_volume_err()
+{
+	if(isset($_SESSION['blood_volume'])){
+		return $_SESSION['blood_volume'];
+	}
+}
+function get_blood_type()
+{
+	if(isset($_SESSION['blood'])){
+		return $_SESSION['blood'];
+	}
+}
+function get_blood_volume()
+{
+	if(isset($_SESSION['volume'])){
+		return $_SESSION['volume'];
 	}
 }
 
@@ -237,6 +296,24 @@ function unset_cache()
 	}
 	if(isset($_SESSION['username'])){
 		unset($_SESSION['username']);
+	}
+	if(isset($_SESSION['start_date'])){
+		unset($_SESSION['start_date']);
+	}
+	if(isset($_SESSION['end_date'])){
+		unset($_SESSION['end_date']);
+	}
+	if(isset($_SESSION['blood_type'])){
+		unset($_SESSION['blood_type']);
+	}
+	if(isset($_SESSION['blood_volume'])){
+		unset($_SESSION['blood_volume']);
+	}
+	if(isset($_SESSION['blood'])){
+		unset($_SESSION['blood']);
+	}
+	if(isset($_SESSION['volume'])){
+		unset($_SESSION['volume']);
 	}
 
 }
