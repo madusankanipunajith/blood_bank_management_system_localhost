@@ -3,6 +3,7 @@
 <head>
 <title>Blood Bank Management System</title>	
 <link rel="stylesheet" type="text/css" href="localhost/bloodbank/css/style.css">
+<link rel="shortcut icon" type="image/png" href="../images/favicon.png"/>
 	<script type="text/javascript" src="localhost/bloodbank/js/script.js"></script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>

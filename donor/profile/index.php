@@ -152,13 +152,12 @@ mysqli_close($link);
             <div class="form-row" style="margin-left: 20%">
                 <div class="form-group">
                 <?php
-                    echo "<a style=\"color: green;\" href=\"edit_donor.php?nic=$NIC\" onclick=\"return confirm('Are you sure to Edit?')\">
-                    <div class=\"tile-3 clearfix\">Edit</div></a>";
+                    echo "<button class=\"btn-edit\" id=\"editBtn\" onclick=\"btnOnclick()\">Edit</button>";
                 ?>
                 </div>
                 <div class="form-group">
                 <?php
-                   echo "<a style=\"color: red;\" href=\"../application/delete.php?nic=$NIC\" onclick=\"return confirm('Warning! : This Cannot be undone... If you proceed, your all data will be lost. (cannot be recover)')\"><div class=\"tile-3 clearfix\" >Delete</div></a>"; 
+                    echo "<button class=\"btn-delete\" onclick=\"deleteOnclick()\">Delete</button>"; 
                 ?>
                 </div>
             </div> 
@@ -168,6 +167,48 @@ mysqli_close($link);
 
     </div>
 
-
+<!-- Popup Modals -->
+    
+    <div id="popup" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="spanOnclick()">&times;</span>
+        <p>Are you sure you want to proceed?</p>
+        <div class="form-group">
+            <?php
+            $url = "edit_donor.php?nic=$NIC";
+                echo "
+                <button class=\"btn-edit\" id=\"editBtn\" onclick=\"yesOnclick('$url')\">Yes</button>";
+                
+                echo "
+                <button id=\"cancelBtn\" class=\"btn-delete\" onclick=\"cancelOnclick()\">No</button>";
+            ?>
+        </div>
+        
+      </div>
+    
+    </div>
+    
+    <div id="delete-popup" class="modal">
+    
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="spanOnclick()">&times;</span>
+        <p>Warning! : This Cannot be undone... If you proceed, your all data will be deleted.</p>
+        <div class="form-group">
+            <?php
+            $url = "../application/delete.php?nic=$NIC";
+                echo "
+                <button class=\"btn-edit\" id=\"editBtn\" onclick=\"yesOnclick('$url')\">Yes</button>";
+                
+                echo "
+                <button id=\"cancelBtn\" class=\"btn-delete\" onclick=\"cancelOnclick()\">No</button>";
+            ?>
+        </div>
+        
+      </div>
+    
+    </div>
 
 <?php include '../../footer.php'; ?>
